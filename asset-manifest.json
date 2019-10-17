@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/johnnybarendrecht/static/css/main.70e0d157.chunk.css",
+    "main.js": "/johnnybarendrecht/static/js/main.68e9b2c3.chunk.js",
+    "main.js.map": "/johnnybarendrecht/static/js/main.68e9b2c3.chunk.js.map",
+    "runtime~main.js": "/johnnybarendrecht/static/js/runtime~main.367332cb.js",
+    "runtime~main.js.map": "/johnnybarendrecht/static/js/runtime~main.367332cb.js.map",
+    "static/css/2.68e2c45d.chunk.css": "/johnnybarendrecht/static/css/2.68e2c45d.chunk.css",
+    "static/js/2.e10ab064.chunk.js": "/johnnybarendrecht/static/js/2.e10ab064.chunk.js",
+    "static/js/2.e10ab064.chunk.js.map": "/johnnybarendrecht/static/js/2.e10ab064.chunk.js.map",
+    "index.html": "/johnnybarendrecht/index.html",
+    "precache-manifest.588880b67bb1d7133c5a73967812996c.js": "/johnnybarendrecht/precache-manifest.588880b67bb1d7133c5a73967812996c.js",
+    "service-worker.js": "/johnnybarendrecht/service-worker.js",
+    "static/css/2.68e2c45d.chunk.css.map": "/johnnybarendrecht/static/css/2.68e2c45d.chunk.css.map",
+    "static/css/main.70e0d157.chunk.css.map": "/johnnybarendrecht/static/css/main.70e0d157.chunk.css.map",
+    "static/media/dci.jpg": "/johnnybarendrecht/static/media/dci.cc835301.jpg",
+    "static/media/e-javascript.jpg": "/johnnybarendrecht/static/media/e-javascript.26f21d99.jpg",
+    "static/media/all.css": "/johnnybarendrecht/static/media/fa-solid-900.db525089.woff",
+    "static/media/internet.png": "/johnnybarendrecht/static/media/internet.c7250c0c.png",
+    "static/media/jd-hnc.jpg": "/johnnybarendrecht/static/media/jd-hnc.4d824c2d.jpg",
+    "static/media/jd-jnj.jpg": "/johnnybarendrecht/static/media/jd-jnj.e8d0da0d.jpg",
+    "static/media/me.jpg": "/johnnybarendrecht/static/media/me.24c9c241.jpg",
+    "static/media/rapb.jpg": "/johnnybarendrecht/static/media/rapb.fbf9699c.jpg",
+    "static/media/spider-hanging.png": "/johnnybarendrecht/static/media/spider-hanging.10a79531.png",
+    "static/media/spider.png": "/johnnybarendrecht/static/media/spider.32da21b8.png",
+    "static/media/tutor2.png": "/johnnybarendrecht/static/media/tutor2.fa567650.png",
+    "static/media/udemy.png": "/johnnybarendrecht/static/media/udemy.61c7240c.png",
+    "static/media/web.png": "/johnnybarendrecht/static/media/web.dd5212cb.png"
+  }
+}
