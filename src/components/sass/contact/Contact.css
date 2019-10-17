@@ -1,0 +1,64 @@
+.form-container {
+  width: 300px;
+  color: white;
+  padding-top: 40px;
+  margin-left: 10px;
+}
+
+.form-container h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.form-container .tag {
+  font-family: "La Belle Aurore", cursive;
+  color: #505050;
+}
+
+.form-container form {
+  width: 100%;
+  color: white;
+}
+
+.form-container form fieldset {
+  border: none;
+}
+
+.form-container form fieldset input,
+.form-container form fieldset textarea {
+  margin: 2% 0;
+  background-color: #3c3c3c;
+  border: none;
+  padding: 10px 5px;
+  color: white;
+}
+
+.form-container form fieldset #name,
+.form-container form fieldset #email-address {
+  width: 48%;
+}
+
+.form-container form fieldset #email-address {
+  margin-left: 4%;
+}
+
+.form-container form fieldset #subject,
+.form-container form fieldset #message {
+  width: 100%;
+}
+
+.form-container form #submit {
+  margin: 10px 0 0 200px;
+  padding: 5px 15px;
+  background: none;
+  border: 1px solid #00ffbb;
+  color: #00ffbb;
+  font-size: 19px;
+}
+
+.form-container form #submit:hover {
+  cursor: pointer;
+  color: #141414;
+  background-color: #00ffbb;
+}
+/*# sourceMappingURL=Contact.css.map */

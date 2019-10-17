@@ -1,0 +1,58 @@
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  left: 0;
+  width: 50px;
+  height: 100vh;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  padding-bottom: 20px;
+  z-index: 999;
+  #logo-container {
+    position: relative;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 5px 0;
+  }
+  #logo {
+    font-size: 40px;
+    font-family: "Bangers", cursive;
+    font-weight: 900;
+    color: #00ffbb;
+    text-shadow: 3px 2px orange;
+    text-decoration: none;
+  }
+  #nav-menu p,
+  #socials p {
+    margin: 8px 0;
+    font-size: 22px;
+  }
+  img {
+    position: relative;
+    width: 22px;
+    transition: all 0.4s;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  .bb {
+    display: block;
+    font-size: 9px;
+    margin-top: -5px;
+  }
+  @media screen and (min-width: 760px) {
+    .bb {
+      display: none;
+    }
+  }
+
+  p:hover {
+    filter: invert(43%) sepia(22%) saturate(5267%) hue-rotate(165deg)
+      brightness(100%) contrast(101%);
+  }
+}

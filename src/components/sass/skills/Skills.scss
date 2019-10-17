@@ -1,0 +1,57 @@
+#skills {
+  padding-top: 5%;
+  min-height: 100vh;
+
+  h4,
+  p {
+    text-align: center;
+    color: white;
+  }
+  .icons {
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 250px;
+    max-width: 470px;
+    .icon-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 75px;
+      height: 125px;
+      font-size: 50px;
+      border: 1px solid white;
+      color: #a0a0a0;
+      margin: 3px;
+      background-color: rgb(20, 20, 20);
+      span {
+        color: #7d8ec0;
+
+        font-size: 12px;
+        margin-top: 12px;
+      }
+
+      .confidence {
+        font-size: 12px;
+        padding: 0;
+        margin-top: 10px;
+        div {
+          font-size: 12px;
+          padding: 0;
+          flex-direction: row;
+          height: 20px;
+        }
+        i {
+          color: #b1a126;
+        }
+      }
+    }
+    .icon-container:hover {
+      color: rgb(10, 231, 213);
+      border: 1px solid rgb(10, 231, 213);
+    }
+  }
+}

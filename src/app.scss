@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Sofadi+One&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  background: rgb(40, 40, 40);
+  scroll-behavior: smooth;
+  #root {
+    min-height: 100vh;
+  }
+}
+body {
+  padding-left: 50px;
+}
+h2 {
+  text-align: center;
+  font-size: 35px;
+  font-family: "Bangers", cursive;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 5px black;
+  color: orange;
+  margin-bottom: 20px;
+}
+p {
+  font-family: "Poppins", sans-serif;
+}
+.first-letter {
+  color: orange;
+  font-family: "Bangers", cursive;
+  font-size: 25px;
+  text-shadow: 2px 2px 5px black;
+}
+.jump {
+  display: inline-block;
+  animation: move 0.4s ease-out;
+  transform-origin: bottom center;
+}
+@keyframes move {
+  10%,
+  35% {
+    transform: scale(2, 0.8) translate(0, 0);
+  }
+
+  45%,
+  50% {
+    transform: scale(1) translate(0, -10px);
+    color: orangered;
+  }
+
+  80% {
+    transform: scale(1) translate(0, 0);
+  }
+}
+.read-button {
+  background: none;
+  border: none;
+  color: orange;
+  cursor: pointer;
+  outline: none;
+}
+#experience,
+#contact,
+#skills,
+#about {
+  overflow: hidden;
+  animation: show 0.2s ease-in-out;
+}
+@keyframes show {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}

@@ -1,0 +1,57 @@
+.form-container {
+  width: 300px;
+  color: white;
+  padding-top: 40px;
+  margin-left: 10px;
+  h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .tag {
+    font-family: "La Belle Aurore", cursive;
+    color: rgb(80, 80, 80);
+  }
+  form {
+    width: 100%;
+    color: white;
+    fieldset {
+      border: none;
+      input,
+      textarea {
+        margin: 2% 0;
+        background-color: rgb(60, 60, 60);
+        border: none;
+        padding: 10px 5px;
+        color: white;
+      }
+      #name,
+      #email-address {
+        width: 48%;
+      }
+      #email-address {
+        margin-left: 4%;
+      }
+
+      #subject,
+      #message {
+        width: 100%;
+      }
+      // textarea {
+      //   margin-top: 5px;
+      // }
+    }
+    #submit {
+      margin: 10px 0 0 200px;
+      padding: 5px 15px;
+      background: none;
+      border: 1px solid #00ffbb;
+      color: #00ffbb;
+      font-size: 19px;
+    }
+    #submit:hover {
+      cursor: pointer;
+      color: #141414;
+      background-color: #00ffbb;
+    }
+  }
+}

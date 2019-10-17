@@ -1,0 +1,36 @@
+#about {
+  width: 100%;
+  height: 100vh;
+  padding: 10vh 15%;
+  color: white;
+}
+
+#about #spider-cute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  border: none;
+  margin: 0;
+}
+
+#about img {
+  width: 50%;
+  max-width: 200px;
+  border-radius: 10px;
+  border: 5px solid white;
+  margin-right: 15px;
+}
+
+#about h2 {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  text-align: center;
+  position: relative;
+}
+
+#about p {
+  margin-top: 15px;
+  position: relative;
+}
+/*# sourceMappingURL=About.css.map */

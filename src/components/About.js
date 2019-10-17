@@ -1,0 +1,133 @@
+import React from "react";
+import "./sass/about/About.scss";
+import me from "../images/me.jpg";
+import spider from "../images/spider.png";
+import { Link } from "react-router-dom";
+import { Title } from "./Title";
+import { readMore } from "./readmore";
+export const About = () => {
+  return (
+    <>
+      <section id="about">
+        <img id="spider-cute" src={spider} alt="spider" />
+        <h2>
+          {" "}
+          <Title text="< About_Me />" />
+        </h2>
+
+        <img src={me} alt="me" align="left" />
+        <p>
+          <span className="first-letter">H</span> i, <br />
+          My name is Johnny Barendrecht.
+        </p>
+
+        <p>
+          Over the last 2 years I have obtained the necessary skills to start a
+          career as a front-end developer.
+        </p>
+
+        <p>
+          In Oktober 2017 I decided to change my career from a call-center agent
+          to a web-developer. <br />I started doing courses online and after
+          about one year I started a intensive one-year developers course at the{" "}
+          <a
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://digitalcareerinstitute.org/"
+          >
+            Digital Career Institute (DCI)
+          </a>
+          . <br />
+        </p>
+        <p>
+          Not only am I a student, I am also the class Tutor. Every monday and
+          friday I assist my peers with projects we currently work on in class.{" "}
+          <br />
+          This is a paid position by{" "}
+          <a
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://digitalcareerinstitute.org/"
+          >
+            DCI
+          </a>{" "}
+        </p>
+        <span className="self">
+          <p>
+            I am born and raised inthe Netherands <br />
+            When I was 16 years old, I worked for a{" "}
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://www.google.com/search?q=kassenbouw&sxsrf=ACYBGNRFiyvjiGdOQXKODHzQQI2YiyqUoA:1570628652419&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiU4prXp4_lAhWHEVAKHUzdAlYQ_AUIEigB&biw=1443&bih=743"
+            >
+              greenhouse construction company
+            </a>
+            . We mainly worked in other countries and from a pretty young age I
+            was travelling all over the world for my work.
+          </p>
+          <p>
+            This was offcourse amazing, but when I turned 18, I thpught it was
+            time for me to travel by myself and leave me amazing contruction
+            job. <br />I did that for a few years. Most of my time I spend in
+            Australia where I lived for about 3 years. One of the best
+            experiences I had here, was working on a{" "}
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://www.google.com/search?q=cattle+station+nt&sxsrf=ACYBGNT0LPxSbtHk7E8nkLL6I49G9iR5KA:1570629426117&source=lnms&tbm=isch&sa=X&ved=0ahUKEwid0ZHIqo_lAhVCbFAKHVpvB6MQ_AUIEigB&biw=1443&bih=743"
+            >
+              cattle station
+            </a>{" "}
+            in the outback of Australie, I can talk about this for hours!
+          </p>
+          <p>
+            <span className="first-letter">5</span> years ago I moved to Berlin
+            where my son was born. <br />
+            Since I did not had any former education, I did what was easiest
+            thing for me to do. <br />
+            Working in call centers for the Dutch market. It was fun at first,
+            but after a few years I felt there was nothing new to learn and
+            there were no challenges left, and I quit.
+          </p>
+          <p>
+            I really had no idea what I wanted to do. I knew that I wanted to do
+            something that would always keep challenging me and offers a great
+            career path. The last became extra important to me when my son was
+            born. <br />A few months after I quit my last call center job, I
+            stumbeld upon a video from a guy who explained how he became a web
+            developer. I was very ispired by his story and started to watch more
+            videos about web developmont, at first. I alway assumed that to be a
+            programmer you would need a very high degree. But watching these
+            people speak, I quickly learned this was not the case and I was
+            inspired to become a developer myself.
+          </p>
+          <p>
+            You can read more about how I skilled myself in the past 2 years, on
+            my experience <Link to="Experience">page.</Link> <br />
+            I just like to add that I am a very positive person, I had over a
+            decade of fun travelling aound the world and I'm very lucky to have
+            a healthy and amazing young child. I think people around me often
+            recognise my natural optisim. <br />I can say though, That I am way
+            more excited about my career and my future in tech than anything I
+            ever did{" "}
+            <span
+              className="side-note"
+              title="Besides from becoming a father offcourse"
+            >
+              before
+            </span>{" "}
+            and it would just be so amazing to be given the oppertunity to work
+            as a developer.
+          </p>
+        </span>
+        <button
+          onClick={() => readMore("self", "a-me", "Learn more")}
+          className="a-me read-button"
+        >
+          Learn more
+        </button>
+      </section>
+    </>
+  );
+};

@@ -1,0 +1,62 @@
+#experience {
+  padding: 10% 0;
+  color: white;
+}
+
+#experience h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#experience .institute {
+  text-align: center;
+}
+
+#experience h4 {
+  padding: 0 20%;
+}
+
+#experience .online-courses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#experience .online-courses img {
+  width: 200px;
+  margin-top: 20px;
+}
+
+#experience .online-courses,
+#experience .dci-course,
+#experience .tutor {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#experience .dci-course {
+  margin-top: 30px;
+}
+
+#experience .dci-course h4 {
+  text-align: end;
+}
+
+#experience .dci-course p {
+  position: relative;
+}
+
+#experience .dci-course img {
+  width: 200px;
+  background-color: color;
+}
+
+#experience .tutor {
+  margin-top: 30px;
+}
+
+#experience .tutor img {
+  width: 200px;
+}
+/*# sourceMappingURL=Experience.css.map */

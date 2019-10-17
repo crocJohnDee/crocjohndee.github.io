@@ -1,0 +1,81 @@
+#skills {
+  padding-top: 5%;
+  min-height: 100vh;
+}
+
+#skills h2,
+#skills h4,
+#skills p {
+  text-align: center;
+  color: white;
+}
+
+#skills .icons {
+  margin: auto;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 250px;
+  max-width: 470px;
+}
+
+#skills .icons .icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75px;
+  height: 125px;
+  font-size: 50px;
+  border: 1px solid white;
+  color: #a0a0a0;
+  margin: 3px;
+  background-color: #141414;
+}
+
+#skills .icons .icon-container span {
+  color: #7d8ec0;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+#skills .icons .icon-container .confidence {
+  font-size: 12px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#skills .icons .icon-container .confidence div {
+  font-size: 12px;
+  padding: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 20px;
+}
+
+#skills .icons .icon-container .confidence i {
+  color: #b1a126;
+}
+
+#skills .icons .icon-container:hover {
+  color: #0ae7d5;
+  border: 1px solid #0ae7d5;
+}
+/*# sourceMappingURL=Skills.css.map */
