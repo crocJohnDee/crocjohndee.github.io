@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "342833ccaa0720982a7ab2ce9a081b52",
+    "revision": "48a756f4de0c492b28fe16bd7865acff",
     "url": "/johnnybarendrecht/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/johnnybarendrecht/static/css/2.68e2c45d.chunk.css"
   },
   {
-    "revision": "80531d1e0a08193809fb",
-    "url": "/johnnybarendrecht/static/css/main.098a7e8b.chunk.css"
+    "revision": "63a6ea2600ca52a98e88",
+    "url": "/johnnybarendrecht/static/css/main.2a874616.chunk.css"
   },
   {
     "revision": "d5ce1c336dfbe8261352",
     "url": "/johnnybarendrecht/static/js/2.e10ab064.chunk.js"
   },
   {
-    "revision": "80531d1e0a08193809fb",
-    "url": "/johnnybarendrecht/static/js/main.da048103.chunk.js"
+    "revision": "63a6ea2600ca52a98e88",
+    "url": "/johnnybarendrecht/static/js/main.0852a731.chunk.js"
   },
   {
     "revision": "f59fbb5622de9500fad6",
