@@ -15,7 +15,7 @@ function App() {
     <>
       <Nav />
       <Switch>
-        <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
+        <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/skills" component={Skills} />
         <Route path="/experience" component={Experience} />
@@ -25,5 +25,6 @@ function App() {
     </>
   );
 }
-
+//https://crocjohndee.github.io/johnnybarendrecht/
+//https://crocjohndee.github.io/https://github.com/crocJohnDee/johnnybarendrecht//
 export default App;

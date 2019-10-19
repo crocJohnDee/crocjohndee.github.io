@@ -3,9 +3,13 @@
   min-height: 100vh;
 
   h4,
+  h3,
   p {
     text-align: center;
     color: white;
+  }
+  .language-container {
+    display: flex;
   }
   .icons {
     margin: auto;

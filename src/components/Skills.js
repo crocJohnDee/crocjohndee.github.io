@@ -2,7 +2,11 @@ import React from "react";
 import "./sass/skills/Skills.scss";
 import uuid from "uuid/v4";
 import { Title } from "./Title";
+import { dutch } from "../images/dutch.png";
+import { english } from "../images/english.png";
+import { german } from "../images/german.png";
 
+// src/images/dutch.png
 const ItemContainer = ({ confidence, icon, name }) => {
   let stars = [];
   for (let i = 0; i < 5; i++) {
@@ -28,6 +32,27 @@ export const Skills = () => {
         <h2>
           <Title text="< Skills />" />
         </h2>
+        <h3>Languages</h3>
+        <div className="language-container">
+          <div className="language">
+            <p>
+              <img src={dutch} alt="dutch" />
+            </p>
+            <p>Dutch</p>
+          </div>
+          <div className="language">
+            <p>
+              <img src={english} alt="english" />
+            </p>
+            <p>English</p>
+          </div>
+          <div className="language">
+            <p>
+              <img src={german} alt="german" />
+            </p>
+            <p>German</p>
+          </div>
+        </div>
         <h4>Skills I obtained over the last 2 years.</h4>
         <p>The stars represend my confidence level, relatively</p>
 
