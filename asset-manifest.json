@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/johnnybarendrecht/static/css/main.182064da.chunk.css",
+    "main.css": "/johnnybarendrecht/static/css/main.49994a90.chunk.css",
     "main.js": "/johnnybarendrecht/static/js/main.fecd5343.chunk.js",
     "main.js.map": "/johnnybarendrecht/static/js/main.fecd5343.chunk.js.map",
     "runtime~main.js": "/johnnybarendrecht/static/js/runtime~main.367332cb.js",
@@ -9,10 +9,10 @@
     "static/js/2.d6fbd8df.chunk.js": "/johnnybarendrecht/static/js/2.d6fbd8df.chunk.js",
     "static/js/2.d6fbd8df.chunk.js.map": "/johnnybarendrecht/static/js/2.d6fbd8df.chunk.js.map",
     "index.html": "/johnnybarendrecht/index.html",
-    "precache-manifest.c9894713147080e89980769759df3f1d.js": "/johnnybarendrecht/precache-manifest.c9894713147080e89980769759df3f1d.js",
+    "precache-manifest.85649c17a7115ecd087a708450058337.js": "/johnnybarendrecht/precache-manifest.85649c17a7115ecd087a708450058337.js",
     "service-worker.js": "/johnnybarendrecht/service-worker.js",
     "static/css/2.68e2c45d.chunk.css.map": "/johnnybarendrecht/static/css/2.68e2c45d.chunk.css.map",
-    "static/css/main.182064da.chunk.css.map": "/johnnybarendrecht/static/css/main.182064da.chunk.css.map",
+    "static/css/main.49994a90.chunk.css.map": "/johnnybarendrecht/static/css/main.49994a90.chunk.css.map",
     "static/media/armin.jpg": "/johnnybarendrecht/static/media/armin.1d60d41c.jpg",
     "static/media/brian.jpg": "/johnnybarendrecht/static/media/brian.3d771f15.jpg",
     "static/media/dci.jpg": "/johnnybarendrecht/static/media/dci.cc835301.jpg",
