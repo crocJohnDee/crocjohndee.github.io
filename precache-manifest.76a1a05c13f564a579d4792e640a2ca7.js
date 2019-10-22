@@ -1,35 +1,55 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e7d9d67633e5a8d350325c9c60989a63",
+    "revision": "6fc7e6a809fe8f402d1c9415898bd2eb",
     "url": "/johnnybarendrecht/index.html"
   },
   {
-    "revision": "6e0fe77f8b7f77eceb1b",
+    "revision": "466109ab2556dc3e7fc5",
     "url": "/johnnybarendrecht/static/css/2.68e2c45d.chunk.css"
   },
   {
-    "revision": "9b82299554801207c31e",
-    "url": "/johnnybarendrecht/static/css/main.2f5711ea.chunk.css"
+    "revision": "09551b8024dd0423567b",
+    "url": "/johnnybarendrecht/static/css/main.198e2076.chunk.css"
   },
   {
-    "revision": "6e0fe77f8b7f77eceb1b",
-    "url": "/johnnybarendrecht/static/js/2.88e30bf5.chunk.js"
+    "revision": "466109ab2556dc3e7fc5",
+    "url": "/johnnybarendrecht/static/js/2.d6fbd8df.chunk.js"
   },
   {
-    "revision": "9b82299554801207c31e",
-    "url": "/johnnybarendrecht/static/js/main.e3fd1c4b.chunk.js"
+    "revision": "09551b8024dd0423567b",
+    "url": "/johnnybarendrecht/static/js/main.aa1ec6a9.chunk.js"
   },
   {
     "revision": "f59fbb5622de9500fad6",
     "url": "/johnnybarendrecht/static/js/runtime~main.367332cb.js"
   },
   {
+    "revision": "1d60d41c663a15bdea56ee913355bb60",
+    "url": "/johnnybarendrecht/static/media/armin.1d60d41c.jpg"
+  },
+  {
+    "revision": "3d771f15e7f21c77d76e4d7cb1a9dd8e",
+    "url": "/johnnybarendrecht/static/media/brian.3d771f15.jpg"
+  },
+  {
     "revision": "cc835301e3f87f17c768419eb05396ec",
     "url": "/johnnybarendrecht/static/media/dci.cc835301.jpg"
   },
   {
+    "revision": "4bdb565b76549676e91b08ce89c09508",
+    "url": "/johnnybarendrecht/static/media/dutch.4bdb565b.png"
+  },
+  {
     "revision": "26f21d99b7b34538feb7bed0c59e44ae",
     "url": "/johnnybarendrecht/static/media/e-javascript.26f21d99.jpg"
+  },
+  {
+    "revision": "8175858cc86edb4d3f5524635e1ada32",
+    "url": "/johnnybarendrecht/static/media/elon.8175858c.jpg"
+  },
+  {
+    "revision": "d64b5a48e06daca892275c990448b137",
+    "url": "/johnnybarendrecht/static/media/english.d64b5a48.png"
   },
   {
     "revision": "0425d661f34ffa46604c9dfa344c03bb",
@@ -92,6 +112,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/johnnybarendrecht/static/media/fa-solid-900.db525089.woff"
   },
   {
+    "revision": "491440aaee5f0be81ca94d6ac117f3d6",
+    "url": "/johnnybarendrecht/static/media/german.491440aa.png"
+  },
+  {
     "revision": "c7250c0c4f706b1ffb8cfe94ed7fe236",
     "url": "/johnnybarendrecht/static/media/internet.c7250c0c.png"
   },
@@ -104,8 +128,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/johnnybarendrecht/static/media/jd-jnj.e8d0da0d.jpg"
   },
   {
+    "revision": "4156f6fa2263f3b7968c5377e64711a5",
+    "url": "/johnnybarendrecht/static/media/jquery.4156f6fa.png"
+  },
+  {
     "revision": "24c9c2414ef81bbf157165bd44e6bca6",
     "url": "/johnnybarendrecht/static/media/me.24c9c241.jpg"
+  },
+  {
+    "revision": "952683c17f00d38f0f0eef2e87bfdb72",
+    "url": "/johnnybarendrecht/static/media/neil.952683c1.jpg"
   },
   {
     "revision": "fbf9699c359537620a56127639b3d523",
