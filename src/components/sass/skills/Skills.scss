@@ -8,54 +8,73 @@
     text-align: center;
     color: white;
   }
-  .language-container {
-    display: flex;
+  h3 {
+    margin-top: 4vw;
   }
-  .icons {
-    margin: auto;
-    margin-top: 30px;
+  .container {
+    width: 80%;
+    margin: 2vw auto;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: center;
-    min-width: 250px;
-    max-width: 470px;
-    .icon-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 75px;
-      height: 125px;
-      font-size: 50px;
-      border: 1px solid white;
-      color: #a0a0a0;
-      margin: 3px;
-      background-color: rgb(20, 20, 20);
-      span {
-        color: #7d8ec0;
 
-        font-size: 12px;
-        margin-top: 12px;
+    .language {
+      width: 30%;
+      p {
+        color: orange;
       }
+      h3 {
+        margin-top: 0;
+      }
+      img {
+        width: 70%;
+        border-radius: 50%;
+        box-shadow: 2px 2px 10px black;
+      }
+    }
+  }
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 125px;
+    font-size: 50px;
+    border: 1px solid #50efbc;
+    color: #50efbc;
+    margin: 3px;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0px 0px 5px white;
 
-      .confidence {
+    border-radius: 10px;
+    span {
+      color: #50efbc;
+
+      font-size: 12px;
+      margin-top: 12px;
+    }
+
+    .confidence {
+      font-size: 12px;
+      padding: 0;
+      margin-top: 10px;
+      div {
         font-size: 12px;
         padding: 0;
-        margin-top: 10px;
-        div {
-          font-size: 12px;
-          padding: 0;
-          flex-direction: row;
-          height: 20px;
-        }
-        i {
-          color: #b1a126;
-        }
+        flex-direction: row;
+        height: 20px;
+      }
+      i {
+        color: orange;
       }
     }
-    .icon-container:hover {
-      color: rgb(10, 231, 213);
-      border: 1px solid rgb(10, 231, 213);
+    img {
+      width: 50px;
     }
+  }
+  .icon-container:hover {
+    color: rgb(10, 231, 213);
+    border: 1px solid rgb(10, 231, 213);
   }
 }

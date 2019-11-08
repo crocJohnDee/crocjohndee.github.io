@@ -1,6 +1,9 @@
 export const readMore = (target, butonl, text) => {
   let textField = document.querySelector(`.${target}`);
   let buttonText = document.querySelector(`.${butonl}`);
+  const fields = document.querySelectorAll(".exp") || undefined;
+  const buttons = document.querySelectorAll(".butt");
+
   if (textField.style.display === "block") {
     if (text) {
       buttonText.innerHTML = "Learn more";
@@ -12,7 +15,6 @@ export const readMore = (target, butonl, text) => {
       textField.addEventListener("animationend", () => {
         if (textField.classList.contains("fold")) {
           textField.style.display = "none";
-          console.log("end");
           textField.classList.remove("fold");
         }
       });
@@ -20,14 +22,13 @@ export const readMore = (target, butonl, text) => {
   } else {
     if (text) {
       buttonText.innerHTML = "hide";
+      textField.style.display = "block";
     } else {
-      buttonText.classList.remove("fa-chevron-circle-down");
+      buttons.forEach(x => x.classList.add("fa-chevron-circle-up"));
+      buttons.forEach(x => x.classList.remove("fa-chevron-circle-up"));
       buttonText.classList.add("fa-chevron-circle-up");
+      fields.forEach(x => (x.style.display = "none"));
+      textField.style.display = "block";
     }
-    textField.style.display = "block";
-    // textField.classList.add("unfold");
-    // textField.addEventListener("animationend", () => {
-    //   textField.classList.remove("unfold");
-    // });
   }
 };

@@ -10,12 +10,8 @@ import rapb from "../images/rapb.jpg";
 import dci from "../images/dci.jpg";
 import tutor from "../images/tutor2.png";
 import { readMore } from "./readmore";
-
-// import dci from "../images/dci.png";
-// import tutor from "../images/tutor.jpg";
 import { Title } from "./Title";
-/*++++++++++++++++++++++++++ */
-/*++++++++++++++++++++++++++ */
+const agent = navigator.userAgent;
 let courses;
 let slideIndex = 0;
 const next = () => {
@@ -92,19 +88,49 @@ export const Experience = () => {
         </h2>
 
         {/* Starting Online */}
-        <h3>
-          Starting online {""}
-          <button
-            onClick={e => {
-              boing(e);
-              readMore("online", "but-onl");
-            }}
-            className="read-button"
-          >
-            <i className="fas fa-chevron-circle-down but-onl" />
-          </button>
-        </h3>
-        <span className="online">
+        <div className="header-buttons">
+          <span className="click">
+            <button
+              onClick={e => {
+                boing(e);
+                readMore("online", "but-onl");
+              }}
+              className="read-button"
+            >
+              Starting online{" "}
+              <i className="butt fas fa-chevron-circle-up but-onl" />
+            </button>
+          </span>
+          <span></span>
+          <h3>
+            Digital Career Institute {""}
+            <button
+              onClick={e => {
+                boing(e);
+
+                readMore("dci", "but-dci");
+              }}
+              className="read-button"
+            >
+              <i className="butt fas fa-chevron-circle-down but-dci" />
+            </button>
+          </h3>
+          <h3>
+            Tutor {""}
+            <button
+              onClick={e => {
+                boing(e);
+
+                readMore("tutor", "but-tutor");
+              }}
+              className="read-button"
+            >
+              <i className="butt fas fa-chevron-circle-down but-tutor" />
+            </button>
+          </h3>
+        </div>
+
+        <span style={{ display: "block" }} className="online exp">
           <br />
           <div id="online">
             <div className="buttons">
@@ -277,20 +303,8 @@ export const Experience = () => {
         </span>
 
         {/* DCI course */}
-        <h3>
-          Digital Career Institute {""}
-          <button
-            onClick={e => {
-              boing(e);
 
-              readMore("dci", "but-dci");
-            }}
-            className="read-button"
-          >
-            <i className="fas fa-chevron-circle-down but-dci" />
-          </button>
-        </h3>
-        <span className="dci">
+        <span className="dci exp">
           <div id="dci">
             <p>
               <img src={dci} alt="dci" />
@@ -353,20 +367,8 @@ export const Experience = () => {
         </span>
 
         {/* Tutor */}
-        <h3>
-          Tutor {""}
-          <button
-            onClick={e => {
-              boing(e);
 
-              readMore("tutor", "but-tutor");
-            }}
-            className="read-button"
-          >
-            <i className="fas fa-chevron-circle-down but-tutor" />
-          </button>
-        </h3>
-        <span className="tutor">
+        <span className="tutor exp">
           <div id="tutor">
             <p>
               <img src={tutor} alt="tutor" />
@@ -405,6 +407,7 @@ export const Experience = () => {
             </p>
           </div>
         </span>
+
         <p id="gitpen">
           <a
             target="_blank"

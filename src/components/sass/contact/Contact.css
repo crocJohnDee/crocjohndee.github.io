@@ -61,4 +61,19 @@
   color: #141414;
   background-color: #00ffbb;
 }
+
+.form-container .leaflet-container {
+  width: 50px;
+  height: 50px;
+}
+
+.form-container #app {
+  height: 400px;
+  width: 400px;
+}
+
+.form-container #app .leaflet-continer {
+  height: 100%;
+  width: 100%;
+}
 /*# sourceMappingURL=Contact.css.map */

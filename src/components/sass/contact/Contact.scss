@@ -1,8 +1,8 @@
 .form-container {
-  width: 300px;
+  width: 50%;
   color: white;
   padding-top: 40px;
-  margin-left: 10px;
+  padding: 10px;
   h2 {
     text-align: center;
     font-size: 40px;
@@ -53,5 +53,19 @@
       color: #141414;
       background-color: #00ffbb;
     }
+  }
+}
+.flex {
+  display: flex;
+}
+#app {
+  height: 100vh;
+  width: 50%;
+
+  .leaflet-container {
+    margin: 0 auto;
+
+    width: 100%;
+    height: 100%;
   }
 }

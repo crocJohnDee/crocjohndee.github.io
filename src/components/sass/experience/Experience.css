@@ -1,62 +1,354 @@
 #experience {
-  padding: 10% 0;
+  padding: 7% 0;
   color: white;
+  overflow-x: hidden;
 }
 
-#experience h2 {
+#experience h3 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-top: 2vw;
 }
 
-#experience .institute {
+#experience p {
   text-align: center;
 }
 
-#experience h4 {
-  padding: 0 20%;
+#experience .cert {
+  color: #00ffbb;
 }
 
-#experience .online-courses {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#experience .online-courses img {
-  width: 200px;
-  margin-top: 20px;
-}
-
-#experience .online-courses,
-#experience .dci-course,
+#experience .dci,
 #experience .tutor {
   width: 90%;
   max-width: 700px;
   margin: 0 auto;
 }
 
-#experience .dci-course {
-  margin-top: 30px;
+#experience a,
+#experience a:visited {
+  color: orange;
 }
 
-#experience .dci-course h4 {
-  text-align: end;
+#experience a:hover {
+  color: orangered;
 }
 
-#experience .dci-course p {
-  position: relative;
-}
-
-#experience .dci-course img {
-  width: 200px;
-  background-color: color;
-}
-
+#experience .online,
+#experience .dci,
 #experience .tutor {
-  margin-top: 30px;
+  margin: 0 auto;
+  display: none;
+  -webkit-animation: unfold 0.4s cubic-bezier(0.59, 1.51, 0.72, 0.8);
+          animation: unfold 0.4s cubic-bezier(0.59, 1.51, 0.72, 0.8);
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
 }
 
-#experience .tutor img {
-  width: 200px;
+@-webkit-keyframes unfold {
+  0% {
+    -webkit-transform: scale(0) translate(60vw, 90vh);
+            transform: scale(0) translate(60vw, 90vh);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(360deg) translate(0);
+            transform: scale(1) rotate(360deg) translate(0);
+  }
+}
+
+@keyframes unfold {
+  0% {
+    -webkit-transform: scale(0) translate(60vw, 90vh);
+            transform: scale(0) translate(60vw, 90vh);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(360deg) translate(0);
+            transform: scale(1) rotate(360deg) translate(0);
+  }
+}
+
+#experience .fold {
+  text-align: right;
+  -webkit-animation: fold 0.4s ease-in-out;
+          animation: fold 0.4s ease-in-out;
+}
+
+@-webkit-keyframes fold {
+  0% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  100% {
+    -webkit-transform: scale(0) rotate(900deg) translate(60vw, 60vh);
+            transform: scale(0) rotate(900deg) translate(60vw, 60vh);
+  }
+}
+
+@keyframes fold {
+  0% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  100% {
+    -webkit-transform: scale(0) rotate(900deg) translate(60vw, 60vh);
+            transform: scale(0) rotate(900deg) translate(60vw, 60vh);
+  }
+}
+
+#experience #online {
+  width: 80%;
+  max-width: 600px;
+  margin: 10px auto 50px auto;
+  background: #333333;
+  overflow-x: hidden;
+}
+
+#experience #online p {
+  text-align: center;
+  margin: 10px auto;
+}
+
+#experience #online ul {
+  width: 300px;
+  margin: 5px auto 10px auto;
+  list-style: none;
+  line-height: 25px;
+}
+
+#experience #online .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#experience #online button {
+  border: none;
+  height: 15px;
+  width: 50%;
+  display: block;
+  background-color: #00ffbb;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+#experience #online button:first-child {
+  background-color: #259b7c;
+}
+
+#experience #online button:hover {
+  background-color: orange;
+}
+
+#experience #online .header-image {
+  display: block;
+  width: 70%;
+  max-width: 300px;
+  margin: 10px auto;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#experience #online .header-image:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#experience #online .book {
+  width: 40%;
+  margin: 5%;
+  border: 1px solid orange;
+}
+
+#experience #online .mySlides {
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#experience #online .slide-from-rigth {
+  -webkit-animation: slide-from-right 0.5s cubic-bezier(0.57, 1.46, 0.57, 0.82);
+          animation: slide-from-right 0.5s cubic-bezier(0.57, 1.46, 0.57, 0.82);
+}
+
+@-webkit-keyframes slide-from-right {
+  0% {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slide-from-right {
+  0% {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+#experience #online .slide-away-right {
+  -webkit-animation: slide-away-right 0.5s cubic-bezier(0.57, 1.46, 0.57, 0.82);
+          animation: slide-away-right 0.5s cubic-bezier(0.57, 1.46, 0.57, 0.82);
+}
+
+@-webkit-keyframes slide-away-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+}
+
+@keyframes slide-away-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+}
+
+#experience #online .slide-from-left {
+  -webkit-animation: slide-from-left 0.5s cubic-bezier(0.57, 1.46, 0.57, 0.82);
+          animation: slide-from-left 0.5s cubic-bezier(0.57, 1.46, 0.57, 0.82);
+}
+
+@-webkit-keyframes slide-from-left {
+  0% {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slide-from-left {
+  0% {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+#experience #online .slide-away-left {
+  -webkit-animation: slide-away-left 0.5s cubic-bezier(0.57, 1.46, 0.57, 0.82);
+          animation: slide-away-left 0.5s cubic-bezier(0.57, 1.46, 0.57, 0.82);
+}
+
+@-webkit-keyframes slide-away-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+}
+
+@keyframes slide-away-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+}
+
+#experience #dci,
+#experience #tutor {
+  margin-top: 2vw;
+  padding: 10px;
+  background-color: #333333;
+}
+
+#experience #dci p:first-child,
+#experience #tutor p:first-child {
+  margin-top: 2vw;
+}
+
+#experience #dci p,
+#experience #tutor p {
+  margin: 10px 0;
+}
+
+#experience #dci img,
+#experience #tutor img {
+  float: left;
+  width: 70%;
+  max-width: 300px;
+  margin: 10px;
+}
+
+#experience .boing {
+  display: inline-block;
+  -webkit-animation: move2 0.2s ease-out;
+          animation: move2 0.2s ease-out;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+}
+
+@-webkit-keyframes move2 {
+  0% {
+    -webkit-transform: scale(2, 0.8);
+            transform: scale(2, 0.8);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: orangered;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    -webkit-transform: scale(2, 0.8);
+            transform: scale(2, 0.8);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: orangered;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+#experience #gitpen {
+  text-align: center;
+  margin: 5vw;
+}
+
+#experience #gitpen a {
+  font-size: 50px;
+  margin: 5vw;
 }
 /*# sourceMappingURL=Experience.css.map */
