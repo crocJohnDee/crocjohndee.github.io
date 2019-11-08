@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://www.johnnybarendrecht.com",
+  "homepage": "http://johnnybarendrecht.com",
   "dependencies": {
     "leaflet": "^1.5.1",
     "react": "^16.9.0",
