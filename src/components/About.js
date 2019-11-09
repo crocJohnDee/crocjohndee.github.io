@@ -9,6 +9,7 @@ const elon = require("../images/elon.jpg");
 const neil = require("../images/neil.jpg");
 const brian = require("../images/brian.jpg");
 const dundee = require("../images/dundee.jpeg");
+const bill = require("../images/bill-gates.jpg");
 
 export const About = () => {
   return (
@@ -147,65 +148,75 @@ export const About = () => {
         </div>
         {/* END */}
         <hr />
-        <h3>Strengths and Weaknesses</h3>
-        <div id="str-and-weak">
-          <div id="strengts">
-            <h3>Strengths</h3>
-            <ul>
-              <li>Enthusiasm</li>
-              <li>Creativity</li>
-              <li>Dedication</li>
-              <li>Determination</li>
-              <li>Work in teams</li>
-              <li>Self discipline</li>
-              <li>problem solving</li>
-              <li>Possitive attitude</li>
-            </ul>
-          </div>
-          <div id="weaknesses">
-            <h3>weaknesses</h3>
-            <ul>
-              <li>Design</li>
-              <li>Presenting</li>
-              <li>Easily bored</li>
-              <li>Strong willed</li>
-              <li>Long-term planning</li>
-              <li>Sometimes impatient</li>
-              <li>Proffesional experience</li>
-              <li>Focusing on small details</li>
-            </ul>
+
+        <h3>Strengths && Weaknesses</h3>
+        <div className="my-container">
+          <div id="str-and-weak">
+            <div id="strengts">
+              <h3>Strengths</h3>
+              <ul>
+                <li>Enthusiasm</li>
+                <li>Creativity</li>
+                <li>Dedication</li>
+                <li>Determination</li>
+                <li>Work in teams</li>
+                <li>Self discipline</li>
+                <li>problem solving</li>
+                <li>Possitive attitude</li>
+              </ul>
+            </div>
+            <div id="weaknesses">
+              <h3>weaknesses</h3>
+              <ul>
+                <li>Design</li>
+                <li>Presenting</li>
+                <li>Easily bored</li>
+                <li>Strong willed</li>
+                <li>Long-term planning</li>
+                <li>Sometimes impatient</li>
+                <li>Proffesional experience</li>
+                <li>Focusing on small details</li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <hr />
         <h3>My Heroes</h3>
-        <p className="center">
-          I believe you can learn a lot about someone if you know who inspires
-          him or her.
+        <div className="my-container">
+
+          <p className="center">
+            I believe you can learn a lot about someone if you know who inspires
+            him or her.
         </p>
-        <p className="center">
-          This list is a fraction of the people that inspire me:
+          <p className="center">
+            This list is a fraction of the people that inspire me:
         </p>
-        <div id="heroes">
-          <div>
-            <img src={armin} alt="Armin" />
-            <p>Armin Van Buuren</p>
-          </div>
-          <div>
-            <img src={elon} alt="Elon" />
-            <p>Elon Musk</p>
-          </div>
-          <div>
-            <img src={neil} alt="Neil" />
-            <p>Neil Degrasse Tyson</p>
-          </div>
-          <div>
-            <img src={brian} alt="Brian" />
-            <p>Brian May</p>
-          </div>
-          <div>
-            <img src={dundee} alt="Dundee" />
-            <p>Michael J. Dundee</p>
+          <div id="heroes">
+            <div>
+              <img src={armin} alt="Armin" />
+              <p>Armin Van Buuren</p>
+            </div>
+            <div>
+              <img src={elon} alt="Elon" />
+              <p>Elon Musk</p>
+            </div>
+            <div>
+              <img src={neil} alt="Neil" />
+              <p>Neil Degrasse Tyson</p>
+            </div>
+            <div>
+              <img src={bill} alt="Bill" />
+              <p>Bill Gates</p>
+            </div>
+            <div>
+              <img src={brian} alt="Brian" />
+              <p>Brian May</p>
+            </div>
+            <div>
+              <img src={dundee} alt="Dundee" />
+              <p>Michael J. Dundee</p>
+            </div>
           </div>
         </div>
       </section>

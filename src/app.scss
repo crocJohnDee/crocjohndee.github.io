@@ -87,3 +87,11 @@ p {
     transform: scaleX(1);
   }
 }
+
+.my-container{
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.48);
+  padding: 7px;
+  width: 90%;
+  margin: 10px auto;
+}

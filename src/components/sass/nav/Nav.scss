@@ -6,7 +6,10 @@ nav {
   text-align: center;
   left: 0;
   top: 0;
-  width: 50px;
+  width: 55px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-sizing: content-box;
   height: 100vh;
   background-color: rgba(20, 20, 20,.8);
   color: white;
@@ -29,8 +32,11 @@ nav {
   }
   #nav-menu p,
   #socials p {
-    margin: 8px 0;
+    margin: 12px 0;
     font-size: 22px;
+  }
+  #nav-menu{
+    margin: 15px 0;
   }
   img {
     position: relative;
