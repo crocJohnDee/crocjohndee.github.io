@@ -9,7 +9,6 @@ nav {
   width: 55px;
   overflow-x: hidden;
   overflow-y: scroll;
-  box-sizing: content-box;
   height: 100vh;
   background-color: rgba(20, 20, 20,.8);
   color: white;
@@ -61,5 +60,11 @@ nav {
   p:hover {
     filter: invert(43%) sepia(22%) saturate(5267%) hue-rotate(165deg)
       brightness(100%) contrast(101%);
+  }
+}
+
+@media screen and (min-height: 600px) {
+  nav {
+    overflow-y: hidden;
   }
 }
