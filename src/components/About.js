@@ -14,27 +14,28 @@ export const About = () => {
   return (
     <>
       <section id="about">
-        <h2>
-          {" "}
-          <Title text="< About_Me />" />
-        </h2>
+        <div id="about-header">
 
-        <div id="profile-pic">
-          <img src={me} alt="me" />
+          <h2>
+            <Title text="About_Me" />
+          </h2>
+
+          <div id="profile-pic">
+            <img src={me} alt="me" />
+          </div>
         </div>
 
         <div className="me-container">
-
           <p>
-            <span className="first-letter">H</span> i, <br />
-            My name is Johnny Barendrecht.
+            <span className="first-letter">H</span> i,
+            I'm Johnny Barendrecht., and thank you so much for checking out my portfolio.
           </p>
 
+          <br />
           <p>
-            Over the last 2 years I have obtained the necessary skills to start
+            For the last 2 years I have obtained the necessary skills to start
             a career as a front-end developer.
-          </p>
-
+          </p> <br />
           <p>
             In Oktober 2017 I decided to change my career from a call-center
             agent to a web-developer. <br />I started doing courses online and
@@ -49,7 +50,7 @@ export const About = () => {
             </a>
             . <br />
           </p>
-
+          <br />
           <p>
             Not only am I a student, I am also the class Tutor. Every monday and
             friday I assist my peers with projects we currently work on in
@@ -63,9 +64,10 @@ export const About = () => {
               DCI
             </a>{" "}
           </p>
+          <br />
           <span className="self">
             <p>
-              I am born and raised inthe Netherands <br />
+              I am born and raised in the Netherands <br />
               When I was 16 years old, I worked for a{" "}
               <a
                 target="_blank"
@@ -77,6 +79,7 @@ export const About = () => {
               . We mainly worked in other countries and from a pretty young age
               I was travelling all over the world for my work.
             </p>
+            <br />
             <p>
               This was offcourse amazing, but when I turned 18, I thpught it was
               time for me to travel by myself and leave me amazing contruction
@@ -92,6 +95,7 @@ export const About = () => {
               </a>{" "}
               in the outback of Australie, I can talk about this for hours!
             </p>
+            <br />
             <p>
               <span className="first-letter">5</span> years ago I moved to
               Berlin where my son was born. <br />
@@ -101,6 +105,7 @@ export const About = () => {
               but after a few years I felt there was nothing new to learn and
               there were no challenges left, and I quit.
             </p>
+            <br />
             <p>
               I really had no idea what I wanted to do. I knew that I wanted to
               do something that would always keep challenging me and offers a
@@ -113,8 +118,9 @@ export const About = () => {
               degree. But watching these people speak, I quickly learned this
               was not the case and I was inspired to become a developer myself.
             </p>
+            <br />
             <p>
-              You can read more about how I skilled myself in the past 2 years,
+              You can read more about how I skilled myself in the last 2 years,
               on my experience <Link to="Experience">page.</Link> <br />
               I just like to add that I am a very positive person, I had over a
               decade of fun travelling aound the world and I'm very lucky to
@@ -141,7 +147,7 @@ export const About = () => {
         </div>
         {/* END */}
         <hr />
-        <h2>Strengths and Weaknesses</h2>
+        <h3>Strengths and Weaknesses</h3>
         <div id="str-and-weak">
           <div id="strengts">
             <h3>Strengths</h3>
@@ -172,7 +178,7 @@ export const About = () => {
         </div>
 
         <hr />
-        <h2>My Heroes</h2>
+        <h3>My Heroes</h3>
         <p className="center">
           I believe you can learn a lot about someone if you know who inspires
           him or her.

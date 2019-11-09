@@ -3,16 +3,21 @@
   min-height: 100vh;
   color: white;
   padding-bottom: 20vh;
-  padding-top: 20px;
   h3 {
     text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    margin: 10px;
+    text-decoration: underline;
+    text-decoration-color: #00ffbb;
   }
   hr {
     margin: 20px;
   }
   .me-container {
+    background-color: rgba(0, 0, 0, 0.48);
+    padding: 7px;
     width: 90%;
-    margin: 0 auto;
+    margin: 10px auto;
   }
   .center {
     text-align: center;
@@ -49,9 +54,22 @@
     position: relative;
   }
   p {
-    margin-top: 15px;
     position: relative;
   }
+  #about-header {
+    background: url(../../../images/about-header.jpg) no-repeat center center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    padding-top: 10px;
+    height: 130px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #00ffbb
+;  }
   .read-button2 {
     background: none;
     color: orange;
@@ -93,8 +111,10 @@
     display: flex;
     justify-content: center;
     h3 {
-      background-color: #00ffbb;
-      color: black;
+      margin: 0;
+      background-color: black;
+      color: white;
+      text-decoration: none;
     }
     ul {
       list-style: none;
@@ -102,18 +122,22 @@
       text-align: center;
     }
     li:nth-child(odd) {
-      background-color: rgba(255, 165, 0, 0.5);
+      background-color: rgba(255, 255, 255, 0.5);
+      color:black;
     }
     li:nth-child(even) {
-      background-color: rgba(0, 255, 187, 0.5);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: rgba(255, 255, 255, 0.7);
+
     }
     li:nth-child(odd):hover {
-      background-color: rgba(255, 165, 0, 1);
+      background-color: rgba(255, 255, 255, 0.8);
       color: black;
     }
     li:nth-child(even):hover {
-      background-color: rgba(0, 255, 187, 1);
-      color: black;
+      background-color: rgba(0, 0, 0, 1);
+      color: rgba(255, 255, 255, 1);
+
     }
     #strengts,
     #weaknesses {

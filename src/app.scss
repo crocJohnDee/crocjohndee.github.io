@@ -15,9 +15,8 @@ html{
   background-size: cover;
 
   body {
-    background: rgba(40, 40, 40, .5);
+    background: rgba(40, 40, 40, .9);
     #root {
-      
       min-height: 100vh;
       display: flex;
     }
@@ -32,6 +31,7 @@ h2 {
   color: #00ffbb;
   margin-bottom: 10px;
 }
+
 p {
   font-family: "Poppins", sans-serif;
 }
