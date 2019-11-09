@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b8ea744bd0b14f8433aec917865fdb21",
+    "revision": "ecedfd08e0fc7ff6c7e071401bc1a27d",
     "url": "/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.0405e156.chunk.css"
   },
   {
-    "revision": "f040f9387814cdd1b23e",
-    "url": "/static/css/main.3445decc.chunk.css"
+    "revision": "f823f3e2005ab4a51f83",
+    "url": "/static/css/main.48653773.chunk.css"
   },
   {
     "revision": "1f1ab2ee02b87e794e23",
     "url": "/static/js/2.ef9e4b57.chunk.js"
   },
   {
-    "revision": "f040f9387814cdd1b23e",
-    "url": "/static/js/main.dd994272.chunk.js"
+    "revision": "f823f3e2005ab4a51f83",
+    "url": "/static/js/main.6adf42fb.chunk.js"
   },
   {
     "revision": "416cc1c79b8c22940a8c",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8e8ef9eb4bf83c38d15b14afbdefe722",
     "url": "/static/media/background2.8e8ef9eb.gif"
+  },
+  {
+    "revision": "bbdf696be82b730aa7617e20d310e01f",
+    "url": "/static/media/bill-gates.bbdf696b.jpg"
   },
   {
     "revision": "3d771f15e7f21c77d76e4d7cb1a9dd8e",
