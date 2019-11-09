@@ -1,7 +1,6 @@
 import React from "react";
 import "./sass/about/About.scss";
-import me from "../images/me.jpg";
-import spider from "../images/spider.png";
+import me from "../images/me2.jpg";
 import { Link } from "react-router-dom";
 import { Title } from "./Title";
 import { readMore } from "./readmore";
@@ -15,14 +14,17 @@ export const About = () => {
   return (
     <>
       <section id="about">
-        <img id="spider-cute" src={spider} alt="spider" />
         <h2>
           {" "}
           <Title text="< About_Me />" />
         </h2>
 
+        <div id="profile-pic">
+          <img src={me} alt="me" />
+        </div>
+
         <div className="me-container">
-          <img src={me} alt="me" align="left" />
+
           <p>
             <span className="first-letter">H</span> i, <br />
             My name is Johnny Barendrecht.

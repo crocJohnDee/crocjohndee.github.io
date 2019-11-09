@@ -4,24 +4,26 @@
   overflow-x: hidden;
 }
 
-#experience h3 {
-  text-align: center;
-  margin-top: 2vw;
-}
-
 #experience p {
   text-align: center;
 }
 
-#experience .cert {
+#experience .header-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#experience .header-buttons h3 {
+  margin-top: 2vw;
+  font-size: 12px;
   color: #00ffbb;
 }
 
-#experience .dci,
-#experience .tutor {
-  width: 90%;
-  max-width: 700px;
-  margin: 0 auto;
+#experience .cert {
+  color: #00ffbb;
 }
 
 #experience a,
@@ -36,6 +38,8 @@
 #experience .online,
 #experience .dci,
 #experience .tutor {
+  width: 100%;
+  max-width: 700px;
   margin: 0 auto;
   display: none;
   -webkit-animation: unfold 0.4s cubic-bezier(0.59, 1.51, 0.72, 0.8);
@@ -95,10 +99,7 @@
 }
 
 #experience #online {
-  width: 80%;
-  max-width: 600px;
-  margin: 10px auto 50px auto;
-  background: #333333;
+  background-color: #333;
   overflow-x: hidden;
 }
 
@@ -165,7 +166,7 @@
 
 #experience #online .mySlides {
   display: none;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -277,26 +278,30 @@
   }
 }
 
+#experience #online,
 #experience #dci,
 #experience #tutor {
-  margin-top: 2vw;
+  width: 95%;
+  margin: 2vw auto;
   padding: 10px;
   background-color: #333333;
 }
 
+#experience #online p:first-child,
 #experience #dci p:first-child,
 #experience #tutor p:first-child {
   margin-top: 2vw;
 }
 
+#experience #online p,
 #experience #dci p,
 #experience #tutor p {
   margin: 10px 0;
 }
 
+#experience #online img,
 #experience #dci img,
 #experience #tutor img {
-  float: left;
   width: 70%;
   max-width: 300px;
   margin: 10px;

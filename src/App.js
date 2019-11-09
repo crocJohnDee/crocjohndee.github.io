@@ -8,7 +8,6 @@ import { About } from "./components/About";
 import { Skills } from "./components/Skills";
 import { Experience } from "./components/Experience";
 import { Contact } from "./components/Contact";
-import { Test } from "./components/Test";
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
         <Route path="/skills" component={Skills} />
         <Route path="/experience" component={Experience} />
         <Route path="/contact" component={Contact} />
-        <Route path="/test" component={Test} />
       </Switch>
     </>
   );

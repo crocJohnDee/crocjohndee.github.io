@@ -1,15 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./sass/home/Home.scss";
-import bg from "../images/web.png";
-import spider from "../images/spider-hanging.png";
 import uuid from "uuid/v4";
 const bounce = e => {
   e.persist();
   e.target.classList.add("bounceH");
-  e.target.addEventListener("animationend", () =>
-    e.target.classList.remove("bounceH")
-  );
+  setTimeout(() => e.target.classList.remove("bounceH"), 800);
+
+
 };
 const hl = e => {
   e.persist();
@@ -28,13 +26,13 @@ const hiArrf = hiArr.map(x => {
       </span>
     );
   } else if (x === " ") {
-    return <span key={uuid()}>&nbsp;&nbsp;&nbsp;</span>;
+    return <span key={uuid()}>&nbsp;</span>;
   } else {
     return (
       <span
         key={uuid()}
         onMouseOver={bounce}
-        className="letter first-animation"
+        className="jump-target first-animation letter fi"
       >
         {x}
       </span>
@@ -43,7 +41,7 @@ const hiArrf = hiArr.map(x => {
 });
 
 let str =
-  "A highly motivated web-developer looking to chang my passion into a career";
+  "A highly motivated and curious web-developer looking to change his passion into a career";
 let arr = str.split("");
 let newArr = arr.map(x => {
   return x !== " " ? (
@@ -57,13 +55,16 @@ let newArr = arr.map(x => {
 
 export const Home = () => {
   setTimeout(() => {
-    // let show = document.querySelector(".what-am-i2");
-    // show.classList.remove("hide");
-    let spider1 = document.querySelector("#spider-hanging");
-    spider1.classList.add("drop");
+
     let buttons = document.querySelectorAll(".btn");
     buttons.forEach(x => x.classList.add("show"));
+
   }, 500);
+
+  setTimeout(() => {
+    let intro = document.querySelectorAll(".jump-target");
+    intro.forEach(x => x.classList.remove("first-animation"));
+  }, 1800);
 
   const shake = e => {
     e.persist();
@@ -75,19 +76,7 @@ export const Home = () => {
 
   return (
     <>
-      <section id="home" style={{ backgroundImage: `url(${bg})` }}>
-        <p className="tag" id="first-tag">
-          &lt;body&gt;
-        </p>
-
-        <img
-          id="spider-hanging"
-          src={spider}
-          alt="spider"
-          title="web-developer"
-          onMouseOverCapture={shake}
-        />
-
+      <section id="home">
         <div id="title">{hiArrf}</div>
         {/* ++++++++++
         ++++++++++++++++++++
@@ -112,13 +101,6 @@ export const Home = () => {
               <span>Hire me</span>
             </div>
           </Link>
-        </div>
-        {/*++++++++++++++++++++++++++*/}
-        <div id="tag-last">
-          <p className="tag">&lt;/body&gt;</p>
-          <p className="tag" id="last-tag">
-            &lt;/html&gt;
-          </p>
         </div>
       </section>
     </>
