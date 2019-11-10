@@ -9,8 +9,6 @@ export const readMore = (target, butonl, text) => {
       buttonText.innerHTML = "Learn more";
       textField.style.display = "none";
     } else {
-      buttonText.classList.remove("fa-chevron-circle-up");
-      buttonText.classList.add("fa-chevron-circle-down");
       textField.classList.add("fold");
       textField.addEventListener("animationend", () => {
         if (textField.classList.contains("fold")) {
@@ -24,9 +22,6 @@ export const readMore = (target, butonl, text) => {
       buttonText.innerHTML = "hide";
       textField.style.display = "block";
     } else {
-      buttons.forEach(x => x.classList.add("fa-chevron-circle-up"));
-      buttons.forEach(x => x.classList.remove("fa-chevron-circle-up"));
-      buttonText.classList.add("fa-chevron-circle-up");
       fields.forEach(x => (x.style.display = "none"));
       textField.style.display = "block";
     }

@@ -148,8 +148,6 @@ export const About = () => {
         </div>
         {/* END */}
         <hr />
-
-        <h3>Strengths && Weaknesses</h3>
         <div className="my-container">
           <div id="str-and-weak">
             <div id="strengts">
@@ -170,9 +168,6 @@ export const About = () => {
               <ul>
                 <li>Design</li>
                 <li>Presenting</li>
-                <li>Easily bored</li>
-                <li>Strong willed</li>
-                <li>Long-term planning</li>
                 <li>Sometimes impatient</li>
                 <li>Proffesional experience</li>
                 <li>Focusing on small details</li>
@@ -182,8 +177,8 @@ export const About = () => {
         </div>
 
         <hr />
-        <h3>My Heroes</h3>
         <div className="my-container">
+          <h3>My Heroes</h3>
 
           <p className="center">
             I believe you can learn a lot about someone if you know who inspires
@@ -195,27 +190,21 @@ export const About = () => {
           <div id="heroes">
             <div>
               <img src={armin} alt="Armin" />
-              <p>Armin Van Buuren</p>
             </div>
             <div>
               <img src={elon} alt="Elon" />
-              <p>Elon Musk</p>
             </div>
             <div>
               <img src={neil} alt="Neil" />
-              <p>Neil Degrasse Tyson</p>
             </div>
             <div>
               <img src={bill} alt="Bill" />
-              <p>Bill Gates</p>
             </div>
             <div>
               <img src={brian} alt="Brian" />
-              <p>Brian May</p>
             </div>
             <div>
               <img src={dundee} alt="Dundee" />
-              <p>Michael J. Dundee</p>
             </div>
           </div>
         </div>

@@ -70,6 +70,12 @@ const FavSite = props => {
     </p>
   );
 };
+const selected = e => {
+  const buttons = document.querySelectorAll(".read-button")
+  buttons.forEach(button => button.classList.remove("select"));
+  e.target.classList.add("select");
+
+}
 const boing = e => {
   e.persist();
   e.target.classList.add("boing");
@@ -83,64 +89,61 @@ export const Experience = () => {
   return (
     <>
       <section id="experience">
-        <h2>
-          <Title text="< Experience />" />
-        </h2>
+        <div id="experience-header">
+          <h2>
+            <Title text="Experience" />
+          </h2>
+        </div>
+
+
 
         {/* Starting Online */}
-        <div className="header-buttons">
-          <span className="click">
-            <button
-              onClick={e => {
-                boing(e);
-                readMore("online", "but-onl");
-              }}
-              className="read-button"
-            >
-              Starting online{" "}
-              <i className="butt fas fa-chevron-circle-up but-onl" />
-            </button>
-          </span>
-          <span></span>
-          <h3>
-            Digital Career Institute {""}
-            <button
-              onClick={e => {
-                boing(e);
+        <div id="header-buttons">
 
-                readMore("dci", "but-dci");
-              }}
-              className="read-button"
-            >
-              <i className="butt fas fa-chevron-circle-down but-dci" />
-            </button>
-          </h3>
-          <h3>
-            Tutor {""}
-            <button
-              onClick={e => {
-                boing(e);
+          <button
+            onClick={e => {
+              selected(e);
+              readMore("online", "but-onl")
+            }
+            }
+            className="read-button">
+            2017
+          </button>
 
-                readMore("tutor", "but-tutor");
-              }}
-              className="read-button"
-            >
-              <i className="butt fas fa-chevron-circle-down but-tutor" />
+
+          <button
+            onClick={e => {
+              selected(e);
+              readMore("dci", "but-dci")
+            }
+            }
+            className="read-button center-button">
+            2018
             </button>
-          </h3>
+
+          <button
+            onClick={e => {
+              selected(e);
+              readMore("tutor", "but-tutor")
+            }
+            }
+            className="read-button">
+            2019
+            </button>
+
         </div>
 
         <span style={{ display: "block" }} className="online exp">
           <br />
+          <div id="buttons">
+            <button onClick={last}>
+              <i className="fas fa-long-arrow-alt-left" />
+            </button>
+            <button onClick={next}>
+              <i className="fas fa-long-arrow-alt-right" />
+            </button>
+          </div>
           <div id="online">
-            <div className="buttons">
-              <button onClick={last}>
-                <i className="fas fa-long-arrow-alt-left" />
-              </button>
-              <button onClick={next}>
-                <i className="fas fa-long-arrow-alt-right" />
-              </button>
-            </div>
             <div className="mySlides">
               <img
                 className="header-image"

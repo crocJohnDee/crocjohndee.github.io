@@ -3,6 +3,7 @@
   min-height: 100vh;
   color: white;
   padding-bottom: 5vh;
+  background: #222222cc;
   h3 {
     text-align: center;
     font-family: 'Source Code Pro', monospace;
@@ -36,9 +37,9 @@
   }
   #about-header {
     background: url(../../../images/about-header.jpg) no-repeat center center ; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
     background-size: cover;
     position: relative;
     width: 100%;
@@ -55,21 +56,8 @@
       
       img{
         width: 100%;
-        box-shadow: 0px 0px 5px #00ffbb;
+        border: 2px solid #00ffbb;
         border-radius: 50%;
-        animation: bg-color 3s ease-in-out infinite
-        }
-  
-        @keyframes bg-color {
-          0%{
-            box-shadow: 0px 0px 5px #00ffbb;
-          }
-          50%{
-            box-shadow: 0px 0px 5px orange;
-          }
-          100%{
-            box-shadow: 0px 0px 5px #00ffbb;
-          }
         }
     }
   }
@@ -118,67 +106,24 @@
       width: 100%;
     }
   }
-  #str-and-weak {
-    display: flex;
-    justify-content: center;
-    h3 {
-      margin: 0;
-      background-color: black;
-      color: white;
-      text-decoration: none;
-    }
-    ul {
-      list-style: none;
-      line-height: 25px;
-      text-align: center;
-    }
-    li:nth-child(odd) {
-      background-color: rgba(255, 255, 255, 0.5);
-      color:black;
-    }
-    li:nth-child(even) {
-      background-color: rgba(0, 0, 0, 0.5);
-      color: rgba(255, 255, 255, 0.7);
-
-    }
-    li:nth-child(odd):hover {
-      background-color: rgba(255, 255, 255, 0.8);
-      color: black;
-    }
-    li:nth-child(even):hover {
-      background-color: rgba(0, 0, 0, 1);
-      color: rgba(255, 255, 255, 1);
-
-    }
-    #strengts,
-    #weaknesses {
-      margin: 0 10px;
-      width: 200px;
-    }
+  ul{
+    text-align: center;
+    line-height: 20px;
+    list-style: none;
   }
   #heroes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     div {
-      width: 17%;
-      min-width: 200px;
-      text-align: center;
+      width: 33%;
       img {
-        margin-top: 20px;
+        height: 100%;
         width: 100%;
-        border-radius: 50%;
-        border-width: 2px;
       }
     }
   }
-  .my-container{
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.48);
-    padding: 7px;
-    width: 90%;
-    margin: 10px auto;
-  }
+
 }
 
 .side-note {

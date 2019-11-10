@@ -1,19 +1,38 @@
 #experience {
-  padding: 7% 0;
+  width: 100%;
+  min-height: 100vh;
   color: white;
+  padding-bottom: 5vh;
+  background: #222222cc;
   overflow-x: hidden;
   p {
     text-align: center;
   }
-  .header-buttons {
+  #experience-header{
+    background: url(../../../images/experience-header.jpeg) no-repeat center 100% ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%,100%;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #00ffbb;
+  padding: 10vw 0;
+}
+  #header-buttons {
     display: flex;
     justify-content: space-around;
-    // border: 1px solid blue;
-    h3 {
-      margin-top: 2vw;
-      font-size: 12px;
-      color: #00ffbb;
+    button{
+      background: rgba(0, 0, 0, 0.48);
+      width: 100%;
+      padding: 5px 0;
+      color: white;
     }
+    .center-button{
+      border-left: 1px solid #00ffbb;
+      border-right: 1px solid #00ffbb;
+    }
+
   }
   .cert {
     color: #00ffbb;
@@ -63,26 +82,11 @@
       transform: scale(0) rotate(900deg) translate(60vw, 60vh);
     }
   }
-  #online {
-    background-color: #333;
-    overflow-x: hidden;
-    p {
-      text-align: center;
-      margin: 10px auto;
-    }
-
-    ul {
-      width: 300px;
-      margin: 5px auto 10px auto;
-      list-style: none;
-      line-height: 25px;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: space-between;
-    }
-
+  #buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
     button {
       border: none;
       height: 15px;
@@ -101,6 +105,24 @@
     button:hover {
       background-color: orange;
     }
+  }
+  #online {
+    background-color: #333;
+    overflow-x: hidden;
+    p {
+      text-align: center;
+      margin: 10px auto;
+    }
+
+    ul {
+      width: 300px;
+      margin: 5px auto 10px auto;
+      list-style: none;
+      line-height: 25px;
+    }
+
+  
+
 
     .header-image {
       display: block;
@@ -179,9 +201,9 @@
   #dci,
   #tutor {
     width: 95%;
-    margin: 2vw auto;
+    margin: 0 auto;
     padding: 10px;
-    background-color: rgb(51, 51, 51);
+    background-color: rgba(0, 0, 0, 0.48);
     p:first-child {
       margin-top: 2vw;
     }
@@ -195,25 +217,6 @@
     }
   }
 
-  .boing {
-    display: inline-block;
-    animation: move2 0.2s ease-out;
-    transform-origin: bottom center;
-  }
-  @keyframes move2 {
-    0% {
-      transform: scale(2, 0.8);
-    }
-
-    50% {
-      transform: scale(1);
-      color: orangered;
-    }
-
-    100% {
-      transform: scale(1);
-    }
-  }
 
   #gitpen {
     text-align: center;
@@ -221,6 +224,18 @@
     a {
       font-size: 50px;
       margin: 5vw;
+    }
+  }
+  .select {
+    animation: fadein .4s ease-in;
+    border-bottom: #00ffbb 1px solid;
+  }
+  @keyframes fadein {
+    0%{
+    border-bottom: none;
+    }
+    100%{
+    border-bottom: #00ffbb 1px solid;
     }
   }
 }
