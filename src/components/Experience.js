@@ -14,40 +14,7 @@ import { Title } from "./Title";
 const agent = navigator.userAgent;
 let courses;
 let slideIndex = 0;
-const next = () => {
-  courses[slideIndex].classList.add("slide-away-left");
-  setTimeout(() => {
-    courses[slideIndex].classList.remove("slide-away-left");
-    courses.forEach(x => (x.style.display = "none"));
-    // previous slideIndex
-    slideIndex < courses.length - 1 ? slideIndex++ : (slideIndex = 0);
-    // next slideIndex
 
-    courses[slideIndex].classList.add("slide-from-rigth");
-    courses[slideIndex].style.display = "block";
-    setTimeout(
-      () => courses[slideIndex].classList.remove("slide-from-rigth"),
-      500
-    );
-  }, 200);
-};
-const last = () => {
-  courses[slideIndex].classList.add("slide-away-right");
-  setTimeout(() => {
-    courses[slideIndex].classList.remove("slide-away-right");
-    courses.forEach(x => (x.style.display = "none"));
-
-    // previous slideIndex
-    slideIndex > 0 ? slideIndex-- : (slideIndex = courses.length - 1);
-    // next slideIndex
-    courses[slideIndex].classList.add("slide-from-left");
-    courses[slideIndex].style.display = "block";
-    setTimeout(
-      () => courses[slideIndex].classList.remove("slide-from-left"),
-      500
-    );
-  }, 200);
-};
 const List = props => {
   return (
     <>
@@ -76,176 +43,150 @@ const selected = e => {
   e.target.classList.add("select");
 
 }
-const boing = e => {
-  e.persist();
-  e.target.classList.add("boing");
-  setTimeout(() => e.target.classList.remove("boing"), 200);
-};
+
 export const Experience = () => {
-  setTimeout(() => {
-    courses = document.querySelectorAll(".mySlides");
-    courses[slideIndex].style.display = "block";
-  });
   return (
     <>
       <section id="experience">
+
         <div id="experience-header">
           <h2>
             <Title text="Experience" />
           </h2>
         </div>
 
-
-
-        {/* Starting Online */}
         <div id="header-buttons">
-
-          <button
+          <button className="read-button"
             onClick={e => {
               selected(e);
               readMore("online", "but-onl")
-            }
-            }
-            className="read-button">
+            }}>
             2017
           </button>
 
-
-          <button
+          <button className="read-button center-button"
             onClick={e => {
               selected(e);
               readMore("dci", "but-dci")
-            }
-            }
-            className="read-button center-button">
+            }}>
             2018
             </button>
 
-          <button
+          <button className="read-button"
             onClick={e => {
               selected(e);
               readMore("tutor", "but-tutor")
-            }
-            }
-            className="read-button">
+            }}>
             2019
             </button>
-
         </div>
 
+        {/*2017*/}
         <span style={{ display: "block" }} className="online exp">
-          <br />
-          <div id="buttons">
-            <button onClick={last}>
-              <i className="fas fa-long-arrow-alt-left" />
-            </button>
-            <button onClick={next}>
-              <i className="fas fa-long-arrow-alt-right" />
-            </button>
-          </div>
           <div id="online">
-            <div className="mySlides">
-              <img
-                className="header-image"
-                style={{ margin: "25px auto" }}
-                src={freeCodeCamp}
-                alt="fcc"
-              />
-              <p>
-                <span className="first-letter">I</span>n Oktober 2017 I started
+            <img
+              className="header-image"
+              style={{ margin: "25px auto" }}
+              src={freeCodeCamp}
+              alt="fcc"
+            />
+            <p>
+              <span className="first-letter">I</span>n Oktober 2017 I started
                 a course on{" "}
-                <a
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  href="https://www.freecodecamp.org/"
-                >
-                  FreeCodeCamp.
+              <a
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://www.freecodecamp.org/"
+              >
+                FreeCodeCamp.
                 </a>{" "}
-                Here I earned 2 certificates. One for{" "}
-                <span className="cert">Responsive Web Design</span> that
-                covered:
+              Here I earned 2 certificates. One for{" "}
+              <span className="cert">Responsive Web Design</span> that
+              covered:
               </p>
-              <ul>
-                <li>Basic HTML and HTML5</li>
-                <li>Basic CSS</li>
-                <li>Applied Visual Design</li>
-                <li>Applied Accessibility</li>
-                <li>Responsive Web Design Principles</li>
-                <li>CSS Flexbox</li>
-                <li>CSS Grid</li>
-                <li>Responsive Web Design Projects</li>
-              </ul>{" "}
-              <p>
-                And one for{" "}
-                <span className="cert">
-                  Javascript Algorithms And Data Structures
+            <ul>
+              <li>Basic HTML and HTML5</li>
+              <li>Basic CSS</li>
+              <li>Applied Visual Design</li>
+              <li>Applied Accessibility</li>
+              <li>Responsive Web Design Principles</li>
+              <li>CSS Flexbox</li>
+              <li>CSS Grid</li>
+              <li>Responsive Web Design Projects</li>
+            </ul>{" "}
+            <p>
+              And one for{" "}
+              <span className="cert">
+                Javascript Algorithms And Data Structures
                 </span>{" "}
-                that covered:
+              that covered:
               </p>
-              <ul>
-                <li>Basic JavaScript</li>
-                <li>ES6</li>
-                <li>Regular Expressions</li>
-                <li>Debugging</li>
-                <li>Basic Data Structures</li>
-                <li>Basic Algorithm Scripting</li>
-                <li>Object Oriented Programming</li>
-                <li>Functional Programming</li>
-                <li>Intermediate Algorithm Scripting</li>
-                <li>JavaScript Algorithms and Data Structures Projects</li>
-              </ul>
-            </div>
-            <div className="mySlides">
-              <br />
-              <img className="header-image" src={udemy} alt="udemy" />
-              <p>
-                <span className="first-letter">A</span>bout halfway tru my first
+            <ul>
+              <li>Basic JavaScript</li>
+              <li>ES6</li>
+              <li>Regular Expressions</li>
+              <li>Debugging</li>
+              <li>Basic Data Structures</li>
+              <li>Basic Algorithm Scripting</li>
+              <li>Object Oriented Programming</li>
+              <li>Functional Programming</li>
+              <li>Intermediate Algorithm Scripting</li>
+              <li>JavaScript Algorithms and Data Structures Projects</li>
+            </ul>
+          </div>
+        </span>
+
+        {/* 2018 */}
+        <span className="dci exp">
+          <div id="dci">
+            <img className="header-image" src={udemy} alt="udemy" />
+            <p>
+              <span className="first-letter">A</span>bout halfway tru my first
                 certificate I als started courses on{" "}
-                <a
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  href="https://www.udemy.com/"
-                >
-                  Udemy.
+              <a
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://www.udemy.com/"
+              >
+                Udemy.
                 </a>{" "}
-                <br />
-                Here are some of the courses I followed over the past 18 months:
+              <br />
+              Here are some of the courses I followed over the past 18 months:
               </p>
 
-              <List
-                name="Colt Steele"
-                course="The Web Developer Bootcamp"
-                domain="https://www.udemy.com/course/the-web-developer-bootcamp/"
-              />
-              <List
-                name="Rob Percival"
-                course="The Complete Web Developer Course 2"
-                domain="https://www.udemy.com/course/the-complete-web-developer-course-2/"
-              />
-              <List
-                name="Jad Khalili"
-                course="Git: Become an Expert in Git & GitHub in 4 Hours"
-                domain="https://www.udemy.com/course/git-expert-4-hours/"
-              />
-              <List
-                name="Joseph Delgadillo, Nick Germaine"
-                course="The Complete Full-Stack JavaScript Course!"
-                domain="https://www.udemy.com/course/full-stack-javascript/"
-              />
-              <List
-                name="Eric Greene"
-                course="Getting Started With React"
-                domain="https://www.udemy.com/course/getting-started-with-react/"
-              />
-              <List
-                name="Eduonix Learning Solutions, Eduonix-Tech ."
-                course="Learn Object Oriented PHP By Building a Complete Website"
-                domain="https://www.udemy.com/course/learn-object-oriented-php-by-building-a-complete-website/"
-              />
-            </div>
+            <List
+              name="Colt Steele"
+              course="The Web Developer Bootcamp"
+              domain="https://www.udemy.com/course/the-web-developer-bootcamp/"
+            />
+            <List
+              name="Rob Percival"
+              course="The Complete Web Developer Course 2"
+              domain="https://www.udemy.com/course/the-complete-web-developer-course-2/"
+            />
+            <List
+              name="Jad Khalili"
+              course="Git: Become an Expert in Git & GitHub in 4 Hours"
+              domain="https://www.udemy.com/course/git-expert-4-hours/"
+            />
+            <List
+              name="Joseph Delgadillo, Nick Germaine"
+              course="The Complete Full-Stack JavaScript Course!"
+              domain="https://www.udemy.com/course/full-stack-javascript/"
+            />
+            <List
+              name="Eric Greene"
+              course="Getting Started With React"
+              domain="https://www.udemy.com/course/getting-started-with-react/"
+            />
+            <List
+              name="Eduonix Learning Solutions, Eduonix-Tech ."
+              course="Learn Object Oriented PHP By Building a Complete Website"
+              domain="https://www.udemy.com/course/learn-object-oriented-php-by-building-a-complete-website/"
+            />
+
             <div className="mySlides">
-              <br />
-              {/* <img src={cs50} alt="cs50" /> */}
+
               <img className="header-image" src={internet} alt="internet" />
               <p>
                 <span className="first-letter">I </span> like doing code
@@ -302,15 +243,16 @@ export const Experience = () => {
                 </span>
               </p>
             </div>
+
+
           </div>
         </span>
 
-        {/* DCI course */}
-
-        <span className="dci exp">
-          <div id="dci">
+        {/* 2019 */}
+        <span className="tutor exp">
+          <div id="tutor">
             <p>
-              <img src={dci} alt="dci" />
+              <img src={dci} alt="dci" className="header-image" />
               <span className="first-letter">I</span>n February 2019 I started a
               intensive one-year course at the{" "}
               <a
@@ -366,15 +308,9 @@ export const Experience = () => {
               to hear from my mentor that I have required the nescessery skills
               to start a career, for me is just undiscribible!
             </p>
-          </div>
-        </span>
 
-        {/* Tutor */}
-
-        <span className="tutor exp">
-          <div id="tutor">
             <p>
-              <img src={tutor} alt="tutor" />
+              <img src={tutor} alt="tutor" className="header-image" />
               <span className="first-letter">b</span>ecause of my prior
               experience with the courses I did online, I was choosen from a
               class of 15 students to become the class tutor.
@@ -427,6 +363,7 @@ export const Experience = () => {
             <i className="fab fa-codepen" />
           </a>
         </p>
+
       </section>
     </>
   );

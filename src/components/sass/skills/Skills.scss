@@ -1,18 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+
 #skills {
-  padding-top: 5%;
   min-height: 100vh;
+  width: 100%;
+  padding-bottom: 5vh;
+  background: #222222cc;
 
   h4,
   h3,
   p {
     text-align: center;
     color: white;
+    font-family: 'Source Code Pro';
   }
+
   h3 {
     margin-top: 4vw;
   }
+  hr{
+    width: 95%;
+    margin: 20px auto;
+  }
   .container {
-    width: 80%;
     margin: 2vw auto;
     display: flex;
     justify-content: space-around;
@@ -36,29 +45,22 @@
   .icon-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 75px;
-    height: 125px;
-    font-size: 50px;
-    border: 1px solid #50efbc;
-    color: #50efbc;
+    justify-content: space-between;
+    width: 30%;
+    min-width: 80px;;
     margin: 3px;
-    background-color: rgb(20, 20, 20);
-    box-shadow: 0px 0px 5px white;
-
-    border-radius: 10px;
+    background-color: rgb(40, 40, 40);
     span {
       color: #50efbc;
-
       font-size: 12px;
-      margin-top: 12px;
+      margin-top: 8px;
     }
 
     .confidence {
       font-size: 12px;
       padding: 0;
-      margin-top: 10px;
+      margin: 7px 0;
       div {
         font-size: 12px;
         padding: 0;
@@ -70,11 +72,52 @@
       }
     }
     img {
-      width: 50px;
+      width: 100%;
     }
   }
   .icon-container:hover {
     color: rgb(10, 231, 213);
     border: 1px solid rgb(10, 231, 213);
+  }
+}
+
+
+
+
+#skill-header{
+  background: url(../../../images/skill-header.jpg) no-repeat center center ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #00ffbb;
+  h2{
+    margin: 0;
+    padding: 10vw 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+  }
+}
+
+.language-container {
+  display: flex;
+  justify-content: space-between;
+
+
+  .language {
+    width: 30%;
+    p {
+      color: orange !important;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    img {
+      width: 70%;
+      border-radius: 50%;
+      box-shadow: 2px 2px 10px black;
+    }
   }
 }

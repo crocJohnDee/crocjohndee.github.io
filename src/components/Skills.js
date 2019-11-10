@@ -4,8 +4,31 @@ import uuid from "uuid/v4";
 import { Title } from "./Title";
 const dutch = require("../images/dutch.png");
 const english = require("../images/english.png");
-const german = require("../images/german.png");
-const jQuery = require("../images/jquery.png");
+const german = require("../images/german.png"),
+  jQuery = require("../images/skills/jquery.png"),
+  html = require("../images/skills/html.png"),
+  css = require("../images/skills/css.png"),
+  javascript = require("../images/skills/javascript.png"),
+  sass = require("../images/skills/sass.png"),
+  bootstrap = require("../images/skills/bootstrap.png"),
+  react = require("../images/skills/react.png"),
+  nodejs = require("../images/skills/nodejs.png"),
+  php = require("../images/skills/php.png"),
+  mongodb = require("../images/skills/mongodb.png"),
+  git = require("../images/skills/git.png"),
+  linux = require("../images/skills/linux.png"),
+  terminal = require("../images/skills/terminal.png"),
+  npm = require("../images/skills/npm.png"),
+  github = require("../images/skills/github.png"),
+  mongoose = require("../images/skills/mongoose.png"),
+  ejs = require("../images/skills/ejs.png"),
+  express = require("../images/skills/express.png"),
+  es6 = require("../images/skills/es6.png"),
+  babel = require("../images/skills/babel.png");
+
+
+
+
 
 // src/images/dutch.png
 const ItemContainer = ({ confidence, icon, name }) => {
@@ -18,7 +41,7 @@ const ItemContainer = ({ confidence, icon, name }) => {
   return (
     <>
       <div className="icon-container">
-        <i className={icon}></i>
+        <img src={icon} alt="" />
         <span>{name}</span>
         <div className="confidence">{stars}</div>
       </div>
@@ -30,83 +53,99 @@ export const Skills = () => {
   return (
     <>
       <section id="skills">
-        <h2>
-          <Title text="< Skills />" />
-        </h2>
-        <h2>Languages</h2>
-        <div className="container">
-          <div className="language">
-            <p>
-              <img src={dutch} alt="dutch" />
-            </p>
-            <h3>Dutch</h3>
-            <p>Native</p>
-          </div>
-          <div className="language">
-            <p>
-              <img src={english} alt="english" />
-            </p>
-            <h3>English</h3>
-            <p>Fluent</p>
-          </div>
-          <div className="language">
-            <p>
-              <img src={german} alt="german" />
-            </p>
-            <h3>German</h3>
-            <p>Work proficiant</p>
-          </div>
-        </div>
-        <h2>Top level Skills</h2>
-        <div className="container">
-          <ItemContainer icon="fab fa-html5" name="HTML" confidence={5} />
-          <ItemContainer icon="fab fa-css3-alt" name="CSS" confidence={5} />
-          <ItemContainer icon="fab fa-js" name="JavaScript" confidence={4} />
-        </div>
-        <h2>Liberaries</h2>
-        <div className="container">
-          <ItemContainer icon="fab fa-sass" name="SASS" confidence={3} />
-          <div className="icon-container">
-            <img src={jQuery} alt="jquery" />
 
-            <span>jQuery</span>
-            <div className="confidence">
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="far fa-star"></i>
-              <i className="far fa-star"></i>
+        <div id="skill-header">
+          <div id="header-opacity">
+
+            <h2>
+              <Title text="SkillS" />
+            </h2>
+          </div>
+        </div>
+
+        <div className="my-container">
+
+          <h3>Languages</h3>
+          <br />
+          <div className="language-container">
+            <div className="language">
+              <p>
+                <img src={dutch} alt="dutch" />
+              </p>
+              <p>Native</p>
+            </div>
+            <div className="language">
+              <p>
+                <img src={english} alt="english" />
+              </p>
+              <p>Fluent</p>
+            </div>
+            <div className="language">
+              <p>
+                <img src={german} alt="german" />
+              </p>
+              <p>Good</p>
             </div>
           </div>
-          <ItemContainer
-            icon="fab fa-bootstrap"
-            name="Bootstrap"
-            confidence={4}
-          />
-          <ItemContainer icon="fab fa-react" name="React" confidence={3} />
         </div>
-        <h2>Back-End</h2>
-        <div className="container">
-          <ItemContainer icon="fab fa-node-js" name="NodeJs" confidence={2} />
-          <ItemContainer icon="fab fa-php" name="PHP" confidence={2} />
-          <ItemContainer icon="fab fa-mdb" name="MongoDB" confidence={1} />
-          <ItemContainer
-            icon="fas fa-database"
-            name="sql-Database"
-            confidence={2}
-          />
+        <hr />
+        <div className="my-container">
+          <h3>The standards</h3>
+          <div className="container">
+            <ItemContainer icon={html} name="HTML" confidence={5} />
+            <ItemContainer icon={css} name="CSS" confidence={5} />
+            <ItemContainer icon={javascript} name="JavaScript" confidence={4} />
+          </div>
         </div>
-        <h2>Nice to Haves</h2>
-        <div className="container">
-          <ItemContainer icon="fab fa-git" name="Git" confidence={3} />
-          <ItemContainer icon="fab fa-linux" name="Linux" confidence={4} />
-          <ItemContainer
-            icon="fas fa-terminal"
-            name="Terminal"
-            confidence={4}
-          />
-          <ItemContainer icon="fab fa-npm" name="NPM" confidence={4} />
-          <ItemContainer icon="fab fa-github" name="Github" confidence={4} />
+        <hr />
+        <div className="my-container">
+          <h3>Liberaries</h3>
+          <br />
+          <div className="container">
+            <ItemContainer icon={sass} name="SASS" confidence={3} />
+            <ItemContainer icon={jQuery} name="jQuery" confidence={3} />
+            <ItemContainer
+              icon={bootstrap}
+              name="Bootstrap"
+              confidence={4}
+            />
+            <ItemContainer icon={react} name="React" confidence={3} />
+          </div>
+        </div>
+        <hr />
+        <div className="my-container">
+          <h3>Back-End</h3>
+          <br />
+          <div className="container">
+            <ItemContainer icon={nodejs} name="NodeJs" confidence={2} />
+            <ItemContainer icon={php} name="PHP" confidence={2} />
+            <ItemContainer icon={mongodb} name="MongoDB" confidence={3} />
+            <ItemContainer icon={mongoose} name="Mongoose" confidence={3} />
+            <ItemContainer
+              icon={express}
+              name="ExpressJS"
+              confidence={3}
+            />
+          </div>
+        </div>
+        <hr />
+        <div className="my-container">
+          <h3>Nice to Haves</h3>
+          <br />
+          <div className="container">
+            <ItemContainer icon={git} name="Git" confidence={3} />
+            <ItemContainer icon={linux} name="Linux" confidence={4} />
+            <ItemContainer
+              icon={terminal}
+              name="Terminal"
+              confidence={4}
+            />
+            <ItemContainer icon={npm} name="NPM" confidence={4} />
+            <ItemContainer icon={github} name="Github" confidence={4} />
+            <ItemContainer icon={ejs} name="EJS" confidence={4} />
+            <ItemContainer icon={es6} name="ES6" confidence={4} />
+            <ItemContainer icon={babel} name="Babel" confidence={2} />
+          </div>
         </div>
       </section>
     </>

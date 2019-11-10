@@ -7,28 +7,48 @@ console.dir(Map);
 export const Contact = () => {
   return (
     <>
-      <div className="flex">
-        <div className="form-container">
-          <p className="tag">&lt;body&gt;</p>
-          <div id="title">
-            <p
-              style={{ marginLeft: "10px", marginTop: "40px" }}
-              className="tag"
-            >
-              &lt;h2&gt;
-            </p>
-            <h2>
-              <Title text="< Contact />" />
-            </h2>
-            <p style={{ marginLeft: "10px" }} className="tag">
-              &lt;/h2&gt;
-            </p>
+      <section id="contact">
+
+        <div id="contact-header">
+          <div className="detail-container">
+            <ul style={{
+              fontSize: "12px",
+              color: "white",
+              padding: "7px",
+              fontFamily: "'Source Code Pro', monospace",
+              lineHeight: "13px"
+            }}>
+              <li>Johnny Barendrecht</li>
+              <li><i className="fas fa-mobile-alt"></i>: +49 167 4072 7153</li>
+              <li><i className="fas fa-at"></i>: johnny.barendrecht@gmail.com</li>
+              <li><i className="fas fa-bed"></i>: Neukölln Berlin</li>
+            </ul>
           </div>
-          <p style={{ fontSize: "12px", textAlign: "center" }}>
-            If you have any questions, please don’t hesitate to contact using
-            form below…
+          <h2>
+            <Title text="Contact" />
+          </h2>
+        </div>
+
+        <p style={{
+          fontSize: "12px",
+          textAlign: "center",
+          color: "white",
+          backgroundColor: "#000000c2",
+          padding: "7px",
+          fontFamily: "'Source Code Pro', monospace",
+
+        }}>
+          If I have sparked your curiousity, I would be very happy to heard from you. <br />
+          Please fill in the form below or contact me by phone, email or any of the social platforms I have shared. <br />
+          <br />
+          Hopefully, bis bald! <br /><br />
+          Viele Grüße, <br />
+          Johnny Barendrecht.
           </p>
-          <form
+
+        <div className="form-container">
+
+          <form autocomplete="off"
             id="fs-frm"
             name="simple-contact-form"
             acceptCharset="utf-8"
@@ -75,13 +95,15 @@ export const Contact = () => {
                 value="Contact Form Submission"
               />
             </fieldset>
-            <input type="submit" value="Submit" id="submit" />
+            <input type="submit" value="Send" id="submit" />
           </form>
         </div>
+        <p style={{ fontSize: "16px", textAlign: "center" }}>Look! I can import open-soured maps!</p>
         <div id="app">
           <Map />
         </div>
-      </div>
+        <p style={{ fontSize: "16px", textAlign: "center" }}>And so much more!</p>
+      </section>
     </>
   );
 };
