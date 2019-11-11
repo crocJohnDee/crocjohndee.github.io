@@ -25,9 +25,12 @@
     }
   }
   hr{
-    color: #fff4d5;
-    border-color: #fff4d5;
-    background-color: #fff4d5;
+    display: block; 
+    height: 1px;
+    border: 0;
+     
+    border-top: 1px solid #fff4d5;
+    margin: 1em 0; padding: 0;
     width: 100%;
     animation: grow-hr 2s ease-in-out;
   }
