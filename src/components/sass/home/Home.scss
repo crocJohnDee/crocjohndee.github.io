@@ -20,10 +20,10 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    animation: pulse 4s ease-in;
+    animation: pulse 5s ease-in;
   }
   @keyframes pulse {
-    0%,60% {
+    0%,50% {
       opacity: 0;
     }
     100% {
@@ -32,19 +32,19 @@
   }
   .hr{ 
     display: block;
-    border: 2px solid rgb(200,200,200);
-    height: 2px;
+    border: 1px solid rgb(200,200,200);
     width: 100%;
-    background-color: rgb(200,200,200);
+
     animation: grow-hr 2s ease-in-out;
   }
   @keyframes grow-hr {
     0%,30%{
-
+      opacity: 0;
       width: 0%;
     }
     100% {
       width: 100%;
+      opacity: 1;
       transform: rotate(180deg);
    
     }
@@ -58,13 +58,12 @@
     text-align:center;
     margin: 0 auto;
     z-index: 9;
-    margin-top: 50vh;
-    transform: translateY(-102px);
+    transform: translateY(35vh);
     font-family: 'Raleway', sans-serif;
     color:  rgb(200,200,200);
   }
   #header-text{ 
-    animation: slide-header 3s cubic-bezier(0.42, 1.74, 0.62, 0.81);
+    animation: slide-header 4s cubic-bezier(0.42, 1.74, 0.62, 0.81);
   }
   @keyframes slide-header {
     0%,50%{
@@ -109,7 +108,11 @@
       transform: scale(.5);
     }
     95%{
+      color: rgb(200,200,200);
       transform: scale(1.09);
+    }
+    98%{
+      color:rgb(120,120,120);
     }
     100%{
       transform: scale(1);
