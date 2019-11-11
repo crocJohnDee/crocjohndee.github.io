@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./sass/home/Home.scss";
 
 export const Home = () => {
-
   return (
     <>
       <section id="home">
@@ -15,7 +14,7 @@ export const Home = () => {
           <hr className="top-hr" />
           <br />
           <h1 id="header-text">
-            JOHNNY BARENDRECHT
+            <span id="x">JOHNNY BARENDRECHT</span>
           </h1>
           <br />
           <hr className="bottom-hr" />
