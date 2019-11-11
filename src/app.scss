@@ -19,6 +19,6 @@ html{
   margin: 10px auto;
 }
 
-a{
-  text-decoration: none;
+a:link{
+  text-decoration: none !important;
 }
