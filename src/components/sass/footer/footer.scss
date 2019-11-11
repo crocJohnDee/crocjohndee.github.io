@@ -1,0 +1,27 @@
+#footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0px;
+    padding: 8px 0;
+    width: 100%;
+    z-index: 999;
+    color: #fff4d5;
+    .bb{
+        color: #fff4d5;
+        font-size: 30px;
+        margin: 0 10px;
+        margin-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+        opacity: .7;
+    }
+    #footer-text{
+        margin-top: 10px;
+    }
+  }
+    
+  // @media screen and (min-height: 600px) {
+  //   nav {
+  //     overflow-y: hidden;
+  //   }
+  // }
+  

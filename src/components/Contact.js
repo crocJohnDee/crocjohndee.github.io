@@ -36,7 +36,6 @@ export const Contact = () => {
           backgroundColor: "#000000c2",
           padding: "7px",
           fontFamily: "'Source Code Pro', monospace",
-
         }}>
           If I have sparked your curiousity, I would be very happy to hear from you. <br />
           Please fill in the form below or contact me by phone, email or any of the social platforms I have shared. <br />

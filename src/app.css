@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Sofadi+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6,123 +6,18 @@
   padding: 0;
 }
 
-html,
-body {
+html {
   width: 100%;
-  background: #282828;
   scroll-behavior: smooth;
-}
-
-html #root,
-body #root {
+  background-color: #2e3842;
   min-height: 100vh;
 }
 
-body {
-  padding-left: 50px;
-}
-
-h2 {
-  text-align: center;
-  font-size: 35px;
-  font-family: "Bangers", cursive;
-  letter-spacing: 3px;
-  text-shadow: 2px 2px 5px black;
-  color: orange;
-  margin-bottom: 20px;
-}
-
-p {
-  font-family: "Poppins", sans-serif;
-}
-
-.first-letter {
-  color: orange;
-  font-family: "Bangers", cursive;
-  font-size: 25px;
-  text-shadow: 2px 2px 5px black;
-}
-
-.jump {
-  display: inline-block;
-  -webkit-animation: move 0.4s ease-out;
-          animation: move 0.4s ease-out;
-  -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
-}
-
-@-webkit-keyframes move {
-  10%,
-  35% {
-    -webkit-transform: scale(2, 0.8) translate(0, 0);
-            transform: scale(2, 0.8) translate(0, 0);
-  }
-  45%,
-  50% {
-    -webkit-transform: scale(1) translate(0, -10px);
-            transform: scale(1) translate(0, -10px);
-    color: orangered;
-  }
-  80% {
-    -webkit-transform: scale(1) translate(0, 0);
-            transform: scale(1) translate(0, 0);
-  }
-}
-
-@keyframes move {
-  10%,
-  35% {
-    -webkit-transform: scale(2, 0.8) translate(0, 0);
-            transform: scale(2, 0.8) translate(0, 0);
-  }
-  45%,
-  50% {
-    -webkit-transform: scale(1) translate(0, -10px);
-            transform: scale(1) translate(0, -10px);
-    color: orangered;
-  }
-  80% {
-    -webkit-transform: scale(1) translate(0, 0);
-            transform: scale(1) translate(0, 0);
-  }
-}
-
-.read-button {
-  background: none;
-  border: none;
-  color: orange;
-  cursor: pointer;
-  outline: none;
-}
-
-#experience,
-#contact,
-#skills,
-#about {
-  overflow: hidden;
-  -webkit-animation: show 0.2s ease-in-out;
-          animation: show 0.2s ease-in-out;
-}
-
-@-webkit-keyframes show {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-}
-
-@keyframes show {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
+.my-container {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.48);
+  padding: 7px;
+  width: 90%;
+  margin: 10px auto;
 }
 /*# sourceMappingURL=app.css.map */

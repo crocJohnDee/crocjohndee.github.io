@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
 #skills {
-  padding-top: 5%;
   min-height: 100vh;
+  width: 100%;
+  padding-bottom: 5vh;
+  background: #222222cc;
 }
 
 #skills h4,
@@ -8,14 +11,19 @@
 #skills p {
   text-align: center;
   color: white;
+  font-family: 'Source Code Pro';
 }
 
 #skills h3 {
   margin-top: 4vw;
 }
 
+#skills hr {
+  width: 95%;
+  margin: 20px auto;
+}
+
 #skills .container {
-  width: 80%;
   margin: 2vw auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,34 +61,28 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 75px;
-  height: 125px;
-  font-size: 50px;
-  border: 1px solid #50efbc;
-  color: #50efbc;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+  min-width: 80px;
   margin: 3px;
-  background-color: #141414;
-  -webkit-box-shadow: 0px 0px 5px white;
-          box-shadow: 0px 0px 5px white;
-  border-radius: 10px;
+  background-color: #282828;
 }
 
 #skills .icon-container span {
   color: #50efbc;
   font-size: 12px;
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 #skills .icon-container .confidence {
   font-size: 12px;
   padding: 0;
-  margin-top: 10px;
+  margin: 7px 0;
 }
 
 #skills .icon-container .confidence div {
@@ -98,11 +100,53 @@
 }
 
 #skills .icon-container img {
-  width: 50px;
+  width: 100%;
 }
 
 #skills .icon-container:hover {
   color: #0ae7d5;
   border: 1px solid #0ae7d5;
+}
+
+#skill-header {
+  background: url(../../../images/skill-header.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #00ffbb;
+}
+
+#skill-header h2 {
+  margin: 0;
+  padding: 10vw 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.language-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.language-container .language {
+  width: 30%;
+}
+
+.language-container .language p {
+  color: orange !important;
+}
+
+.language-container .language h3 {
+  margin-top: 0;
+}
+
+.language-container .language img {
+  width: 70%;
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 2px 10px black;
+          box-shadow: 2px 2px 10px black;
 }
 /*# sourceMappingURL=Skills.css.map */

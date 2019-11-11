@@ -1,539 +1,112 @@
-@import url("https://fonts.googleapis.com/css?family=La+Belle+Aurore&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,300,200,900,700,600");
-@import url("https://fonts.googleapis.com/css?family=Bangers&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 #home {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
-
-  #title {
-
-    font-family: "Bangers", cursive;
-    letter-spacing: 5px;
-    margin-left: 35px;
+  .background{
+    position: absolute;
   }
-
-  .letter {
-    display: inline-block;
-    font-size: 11vw;
-    text-shadow: 2px 2px 5px black;
-    color: orange;
+  .opacity {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(26, 9, 63, 0.53); 
   }
-  @media screen and (min-width: 960px) {
-    .letter {
-      font-size: 105px;
-    }
+  .fadein {
+    height: 100vh;
+    background: url(../../../images/background.jpg) no-repeat 78% 50% fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    animation: pulse 4s ease-in;
   }
-
-  @for $i from 1 through 17 {
-    $n: 1;
-    $r: random(10);
-    @if ($r > 5) {
-      $n: -1;
-    }
-    $x: (random(1000) + 300) * $n + px;
-    $y: (random(1000) + 300) * $n + px;
-    @debug $x;
-    $d: 1440 * $n + deg;
-    .first-animation:nth-child(#{$i}) {
-      animation: anim#{$i} 1.8s;
-      // animation-delay: -$i * 0.2s;
-    }
-    @keyframes anim#{$i} {
-      0% {
-        transform: translate3d($x, $y, -1000px) rotate(0deg);
-        opacity: 0;
-      }
-      100% {
-        transform: translate3d(0, 0, 0) rotate($d);
-        opacity: 0.8;
-      }
-    }
-  }
-
-  .hl {
-    animation: fade 0.9s;
-    // color: #00ffbb;
-  }
-  @keyframes fade {
-    0% {
-      color: #00ffbb;
-    }
-    50% {
-      color: rgba(0, 255, 187, 0.2);
+  @keyframes pulse {
+    0%,50% {
+      opacity: 0;
     }
     100% {
-      color: #00ffbb;
+      opacity: 1;
     }
   }
-  #intro {
-    z-index: 10;
-    font-family: "Poppins", sans-serif;
-    text-shadow: 2px 2px 5px black;
-    letter-spacing: 3px;
-    color: #00ffbb;
+  hr{
+    width: 100%;
+    animation: grow-hr 2s ease-in-out;
+  }
+  @keyframes grow-hr {
+    0%,30%{
+     opacity: 0;
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+      transform: rotate(180deg);
+    }
+  }
+  .bottom-hr {
+    float: right;
+  }
+  .title {
     width: 90%;
-    max-width: 900px;
-    padding: 10px;
-    background-color: rgba(70, 70, 70, .4);
-    margin: 10vh auto;
-    animation: slide 2.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    text-align:center;
+    margin: 0 auto;
+    transform: translateY(35vh);
+    font-family: 'Raleway', sans-serif;
+    color: #fff4d5;
   }
-  @keyframes slide {
-    0%,70% {
-      transform: translate(-300vh, 50vh);
+  #header-text{
+    animation: slide-header 3s cubic-bezier(0.42, 1.74, 0.62, 0.81);
+  }
+  @keyframes slide-header {
+    0%,50%{
+      opacity: 0;
+      transform: scale(.3);
     }
-    90%{
-      transform: rotate(390deg);
+    85%{
+      transform: scale(1.02);
     }
-    100% {
-      transform: translate(0) rotate(0deg);
+    100%{
+      opacity: 1;
+      transform: scale(1);
     }
-  } 
+  }
+  #proffesion{
+    margin: 30px;
+  }
   #buttons {
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
     width: 90%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
 
+    button{
+      background: transparent;
+    }
     .btn {
-      line-height: 50px;
-      height: 50px;
+      padding: 8px 0;
+      width: 8em;
       text-align: center;
-      width: 125px;
       cursor: pointer;
       margin: 5px;
-      color: white;
-      position: relative;
-      span {
-        z-index: 2;
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-      }
+      color: #fff4d5;
+      border-radius: 5px;
+      border: 1px solid #fff4d5;
     }
-
-    .btnOne {
-      transform: translate(-100vw, 100vw);
-    }
-    .btnTwo {
-      transform: translate(100vw, -100vw);
-    }
-    .btn::before {
-      content: "";
-      position: absolute;
-      // transform: translate(100vw, 100vw);
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      transition: all 0.5s;
-      border: 1px solid #00ffbb;
-      background-color: rgba(255, 165, 0, 0);
-    }
-    .btn::after {
-      content: "";
-      position: absolute;
-      // transform: translate(-100vw, 100vw);
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      transition-property: transform;
-      transition: all 0.5s;
-      border: 1px solid orange;
-      background-color: rgba(0, 255, 187,.3);
-    }
-
-    .btn:hover::before {
-      transform: rotate(-45deg);
-      background-color: rgba(255, 165, 0, 0);
-    }
-    .btn:hover::after {
-      transform: rotate(45deg);
-      background-color: rgba(0, 255, 187, 0);
+    .button:active{
+      transform: scale(1.2);
+      background: red;
     }
   }
-  .bounceH {
-    animation: jump .4s ease-out !important;
-    transform-origin: bottom center;
+  #finally{
+    animation: finally 5s ease-in-out;
   }
-
-  @keyframes jump {
-    0% {
-      transform: scale(2, 0.2) translate(0, 0);
+  @keyframes finally {
+    0%,80%{
+      opacity: 0;
+      transform: scale(.5);
     }
-
-    50% {
-      transform: scale(1) translate(0, -50px);
-      color: orangered;
+    95%{
+      transform: scale(1.09);
     }
-
-    100% {
-      transform: scale(1) translate(0, 0);
+    100%{
+      transform: scale(1);
+      opacity: 1;
     }
   }
 }
-
-#spider-hanging {
-  position: absolute;
-  left: 30%;
-  transform: translateY(-465px);
-  cursor: grab;
-  
-}
-
-.drop {
-  transform: translateY(-200px);
-
-  // top: -200px;
-  // transition-duration: 2600ms;
-  // transition-timing-function: cubic-bezier(0.84, 1.43, 0.79, 0.79);
-  // animation: lj 3s ease-in-out infinite;
-  // transform-origin: top;
-}
-
-@keyframes lj {
-  0% {
-    transform: rotate(10deg);
-  }
-
-  50%{
-    transform: rotate(-10deg);
-
-  }
-  
-  100% {
-    transform: rotate(10deg);
-  }
-}
-
-.show {
-  transform: translate(0) rotate(1440deg) !important;
-  transition-duration: 800ms;
-  transition-delay: 1s;
-  transition-timing-function: cubic-bezier(0.74, 1.48, 0.89, 0.92);
-}
-
-.hide {
-  display: none !important;
-}
-
-.test2 {
-  color: #00ffbb;
-}
-
-
-
-//====================================================================================
-//====================================================================================
-//====================================================================================
-//====================================================================================
-//====================================================================================
-//====================================================================================
-//====================================================================================
-
-// @import url("https://fonts.googleapis.com/css?family=La+Belle+Aurore&display=swap");
-// @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,300,200,900,700,600");
-// @import url("https://fonts.googleapis.com/css?family=Bangers&display=swap");
-// @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-// #home {
-//   width: 100%;
-//   height: 100vh;
-//   overflow: hidden;
-//   position: relative;
-
-
-//   .tag {
-//     font-family: "La Belle Aurore", cursive;
-//     color: rgb(80, 80, 80);
-//   }
-//   #first-tag {
-//     position: absolute;
-//     top: 10px;
-//     left: 15px;
-//   }
-//   #tag-last {
-//     position: absolute;
-//     bottom: 10px;
-//     margin-left: 15px;
-//     .tag:last-child {
-//       transform: translateX(-10px);
-//     }
-//   }
-
-//   #title {
-//     position: relative;
-//     top: 10%;
-//     font-family: "Bangers", cursive;
-//     letter-spacing: 5px;
-//     margin-left: 35px;
-//   }
-//   #title::after,
-//   #title::before {
-//     font-family: "La Belle Aurore", cursive;
-//     color: rgb(80, 80, 80);
-//     display: block;
-//     margin-left: -10px;
-//     letter-spacing: 0px;
-//   }
-//   #title::before {
-//     content: "<h1>";
-//     margin-bottom: -10px;
-//   }
-//   #title::after {
-//     content: "</h1>";
-//   }
-
-//   .letter {
-//     display: inline-block;
-//     font-size: 11vw;
-//     text-shadow: 2px 2px 5px black;
-//     color: orange;
-//   }
-//   @media screen and (min-width: 960px) {
-//     .letter {
-//       font-size: 105px;
-//     }
-//   }
-
-//   @for $i from 1 through 17 {
-//     $n: 1;
-//     $r: random(10);
-//     @if ($r > 5) {
-//       $n: -1;
-//     }
-//     $x: (random(1000) + 300) * $n + px;
-//     $y: (random(1000) + 300) * $n + px;
-//     @debug $x;
-//     $d: 1440 * $n + deg;
-//     .first-animation:nth-child(#{$i}) {
-//       animation: anim#{$i} 1.8s;
-//       // animation-delay: -$i * 0.2s;
-//     }
-//     @keyframes anim#{$i} {
-//       0% {
-//         transform: translate3d($x, $y, -1000px) rotate(0deg);
-//         opacity: 0;
-//       }
-//       100% {
-//         transform: translate3d(0, 0, 0) rotate($d);
-//         opacity: 0.8;
-//       }
-//     }
-//   }
-
-//   .hl {
-//     animation: fade 0.9s;
-//     // color: #00ffbb;
-//   }
-//   @keyframes fade {
-//     0% {
-//       color: #00ffbb;
-//     }
-//     50% {
-//       color: rgba(0, 255, 187, 0.2);
-//     }
-//     100% {
-//       color: #00ffbb;
-//     }
-//   }
-//   #intro {
-//     position: relative;
-//     top: 30%;
-//     left: auto;
-//     font-family: "Poppins", sans-serif;
-//     text-shadow: 2px 2px 5px black;
-//     letter-spacing: 3px;
-//     color: #00ffbb;
-//     width: 70%;
-//     max-width: 900px;
-//     padding: 10px;
-//     background-color: rgb(50, 50, 50);
-//     margin: 50px auto;
-//     transform: translateX(-25px);
-//     animation: slide 1.5s ease-in-out;
-//   }
-//   @keyframes slide {
-//     0% {
-//       transform: translate(-300vh, 50vh);
-//     }
-//     100% {
-//       transform: translate(0) rotate(360deg);
-//     }
-//   }
-
-//   #what-am-i {
-//     position: relative;
-//   }
-  
-
-
- 
-//   #buttons {
-//     font-family: "Poppins", sans-serif;
-//     position: absolute;
-//     bottom: 100px;
-//     width: 90%;
-//     display: flex;
-//     justify-content: center;
-//     margin: 0 auto;
-
-//     .btn {
-//       line-height: 50px;
-//       height: 50px;
-//       text-align: center;
-//       width: 125px;
-//       cursor: pointer;
-//       margin: 5px;
-//       color: white;
-//       position: relative;
-//       span {
-//         z-index: 2;
-//         display: block;
-//         position: absolute;
-//         width: 100%;
-//         height: 100%;
-//       }
-//     }
-
-//     .btnOne {
-//       transform: translate(-100vw, 100vw);
-//     }
-//     .btnTwo {
-//       transform: translate(100vw, -100vw);
-//     }
-//     .btn::before {
-//       content: "";
-//       position: absolute;
-//       // transform: translate(100vw, 100vw);
-//       top: 0;
-//       left: 0;
-//       width: 100%;
-//       height: 100%;
-//       z-index: 1;
-//       transition: all 0.5s;
-//       border: 1px solid #00ffbb;
-//       background-color: rgba(255, 165, 0, 0);
-//     }
-//     .btn::after {
-//       content: "";
-//       position: absolute;
-//       // transform: translate(-100vw, 100vw);
-//       top: 0;
-//       left: 0;
-//       width: 100%;
-//       height: 100%;
-//       z-index: 1;
-//       transition-property: transform;
-//       transition: all 0.5s;
-//       border: 1px solid orange;
-//       background-color: #00ffbb;
-//     }
-
-//     .btn:hover::before {
-//       transform: rotate(-45deg);
-//       background-color: rgba(255, 165, 0, 0);
-//     }
-//     .btn:hover::after {
-//       transform: rotate(45deg);
-//       background-color: rgba(0, 255, 187, 0);
-//     }
-//   }
-//   .bounceH {
-//     animation: jump .4s ease-out !important;
-//     transform-origin: bottom center;
-//   }
-
-//   @keyframes jump {
-//     0% {
-//       transform: scale(2, 0.2) translate(0, 0);
-//     }
-
-//     50% {
-//       transform: scale(1) translate(0, -50px);
-//       color: orangered;
-//     }
-
-//     100% {
-//       transform: scale(1) translate(0, 0);
-//     }
-//   }
-// }
-
-// #spider-hanging {
-//   position: absolute;
-//   top: 0;
-//   right: 40px;
-//   transform: translateY(-400px);
-//   cursor: grab;
-
-// }
-
-// .drop {
-//   transform: translateY(0) !important;
-//   transition-duration: 2600ms;
-//   transition-timing-function: cubic-bezier(0.84, 1.43, 0.79, 0.79);
-// }
-// .shake {
-//   animation: lj 0.3s;
-//   transform-origin: top 0px;
-// }
-// @keyframes lj {
-//   0% {
-//     transform: translateY(-2px) rotate(1deg);
-//   }
-//   10% {
-//     transform: translateY(-4px) rotate(-1deg);
-//   }
-//   20% {
-//     transform: translateY(-6px) rotate(1deg);
-//   }
-//   30% {
-//     transform: translateY(-2px) rotate(-1deg);
-//   }
-//   40% {
-//     transform: translateY(2px) rotate(1deg);
-//   }
-//   50% {
-//     transform: translateY(-2px) rotate(-1deg);
-//   }
-//   60% {
-//     transform: translateY(-4px) rotate(1deg);
-//   }
-//   70% {
-//     transform: translateY(-6px) rotate(-1deg);
-//   }
-//   80% {
-//     transform: translateY(-2px) rotate(1deg);
-//   }
-//   90% {
-//     transform: translateY(2px) rotate(-1deg);
-//   }
-//   100% {
-//     transform: translateY(-2px) rotate(1deg);
-//   }
-// }
-
-// .show {
-//   transform: translate(0) rotate(1440deg) !important;
-//   transition-duration: 800ms;
-//   transition-delay: 1s;
-//   transition-timing-function: cubic-bezier(0.74, 1.48, 0.89, 0.92);
-// }
-
-// .hide {
-//   display: none !important;
-// }
-
-// .test2 {
-//   color: #00ffbb;
-// }

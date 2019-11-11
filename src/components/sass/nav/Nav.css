@@ -3,72 +3,18 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: center;
-  left: 0;
-  width: 50px;
-  height: 100vh;
-  background-color: #141414;
-  color: white;
-  padding-bottom: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  top: 10px;
+  width: 100%;
   z-index: 999;
 }
 
-nav #logo-container {
-  position: relative;
-  background-color: black;
-  color: white;
-  font-size: 12px;
-  padding: 5px 0;
-}
-
-nav #logo {
-  font-size: 40px;
-  font-family: "Bangers", cursive;
-  font-weight: 900;
-  color: #00ffbb;
-  text-shadow: 3px 2px orange;
-  text-decoration: none;
-}
-
-nav #nav-menu p,
-nav #socials p {
-  margin: 8px 0;
-  font-size: 22px;
-}
-
-nav img {
-  position: relative;
-  width: 22px;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-nav .bb {
-  display: block;
-  font-size: 9px;
-  margin-top: -5px;
-}
-
-@media screen and (min-width: 760px) {
-  nav .bb {
-    display: none;
-  }
-}
-
-nav p:hover {
-  -webkit-filter: invert(43%) sepia(22%) saturate(5267%) hue-rotate(165deg) brightness(100%) contrast(101%);
-          filter: invert(43%) sepia(22%) saturate(5267%) hue-rotate(165deg) brightness(100%) contrast(101%);
+.bb {
+  font-family: 'Roboto', sans-serif;
+  color: #fff4d5;
 }
 /*# sourceMappingURL=Nav.css.map */

@@ -41,7 +41,6 @@ const selected = e => {
   const buttons = document.querySelectorAll(".read-button")
   buttons.forEach(button => button.classList.remove("select"));
   e.target.classList.add("select");
-
 }
 
 export const Experience = () => {
@@ -237,9 +236,9 @@ export const Experience = () => {
                 <span className="cert">
                   I know that doesnt seem like a lot of books. But I noticed
                   that a lot of books are outdated. The technology is changing
-                  so rapidaly, that by the time a author has finished a book,
+                  so rapidly, that by the time an author has finished a book,
                   there is updated information online. <br /> <br />
-                  It is still nice to have some phisical books laying around.{" "}
+                  It is still nice to have some physical books laying around.{" "}
                 </span>
               </p>
             </div>
@@ -273,7 +272,7 @@ export const Experience = () => {
               couldn't see the forest from the trees anymore.
             </p>
             <p>
-              <span className="first-letter">@</span> DCI, they lay there focus
+              <span className="first-letter">@</span> DCI, they lay their focus
               on the{" "}
               <a
                 target="_blank"
@@ -282,8 +281,8 @@ export const Experience = () => {
               >
                 MERN Stack.
               </a>{" "}
-              Some of the greatest thing about this course is the step by step
-              focus on many different topics invololving programming. And to be
+              Some of the greatest things about this course is the step by step
+              focus on many different topics invololving programming, and to be
               around so many like-mided people who are also excited about
               programming.
             </p>
@@ -294,10 +293,10 @@ export const Experience = () => {
                 rel="noreferrer noopener"
                 href="https://github.com/crocJohnDee?tab=repositories"
               >
-                Github repositorie
+                Github repository
               </a>{" "}
               You will find nearly 100 projects or challenges we have been
-              working tru this year.
+              working through this year.
             </p>
             <p>
               Currently I am still a student at DCI. But according to my mentor
@@ -306,13 +305,13 @@ export const Experience = () => {
               Hearing this made me super excited off course. Starting a career
               in web development has been my biggest dream now for 2 years. And
               to hear from my mentor that I have required the nescessery skills
-              to start a career, for me is just undiscribible!
+              to start a career, for me is just indescribable!
             </p>
 
             <p>
               <img src={tutor} alt="tutor" className="header-image" />
               <span className="first-letter">b</span>ecause of my prior
-              experience with the courses I did online, I was choosen from a
+              experience with the courses I did online, I was chosen from a
               class of 15 students to become the class tutor.
             </p>
             <p>
@@ -322,27 +321,25 @@ export const Experience = () => {
             </p>
             <p>
               when we first started covering JavaScript, that's when I became
-              the class Tutor. Every friday afternoon for 4 hours, my fellow
-              classmates would come and I assist them with projects or
-              challenges that we have been covering for that week.
+              the class Tutor. Every Friday afternoon for 4 hours, my fellow
+              classmates would come and I would assist them with projects or
+              challenges that we had been covering for that week.
             </p>
             <p>
-              The best thing for me about this position, is the fact that I
-              learned so much more than that I wouldnt have without this
-              experience. What I learned, is that the best way to learn
+              The greatest thing about this position, is that the best way to learn
               something yourself is to try and explain it to your peers. <br />
               This is what I do now at home as well. I have a gigantic
               whiteboard in my room and whenever I am struggling with a problem,
-              I would go to the whitboard and draw out the problem. Trying to
+              I go to the whitboard and draw out the problem. Trying to
               explain it to myself as I would to others. <br />
               Also, other developers may come across other problems and it is a
               huge challange and passion to help and tackle that problem. <br />{" "}
-              Apperenly you learn a lot from other developers their bugs.
+              Apparently you learn a lot from other developers and their bugs.
             </p>
             <p>
               And besides that, I'm also very happy that I was able to help
-              others. Many classmates have become real mates and we also come
-              together outside of school a lot and code together.
+              others. Many classmates have become real mates and we also see eachother
+              socially and collaborate on outside projects.
             </p>
           </div>
         </span>

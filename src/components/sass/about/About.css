@@ -2,12 +2,17 @@
   width: 100%;
   min-height: 100vh;
   color: white;
-  padding-bottom: 20vh;
-  padding-top: 20px;
+  padding-bottom: 5vh;
+  background: #222222cc;
 }
 
 #about h3 {
   text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  margin: 10px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #00ffbb;
+          text-decoration-color: #00ffbb;
 }
 
 #about hr {
@@ -15,8 +20,11 @@
 }
 
 #about .me-container {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.48);
+  padding: 7px;
   width: 90%;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 #about .center {
@@ -24,31 +32,51 @@
   padding: 0 20px;
 }
 
-#about #spider-cute {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 250px;
-  border: none;
-  margin: 0;
-}
-
-#about img {
-  width: 50%;
-  max-width: 200px;
-  border-radius: 10px;
-  border: 5px solid white;
-  margin-right: 15px;
-}
-
 #about h2 {
   text-align: center;
   position: relative;
+  -webkit-transform: translateY(18vw);
+          transform: translateY(18vw);
+  margin: 0;
 }
 
 #about p {
-  margin-top: 15px;
   position: relative;
+}
+
+#about #about-header {
+  background: url(../../../images/about-header.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 27vw;
+  border-bottom: 2px solid #00ffbb;
+}
+
+#about #about-header #profile-pic {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  display: block;
+  width: 50%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#about #about-header #profile-pic img {
+  width: 100%;
+  border: 2px solid #00ffbb;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 650px) {
+  #about h2 {
+    -webkit-transform: translateY(110px);
+            transform: translateY(110px);
+  }
+  #about #about-header {
+    margin-bottom: 160px;
+  }
 }
 
 #about .read-button2 {
@@ -105,48 +133,10 @@
   }
 }
 
-#about #str-and-weak {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#about #str-and-weak h3 {
-  background-color: #00ffbb;
-  color: black;
-}
-
-#about #str-and-weak ul {
-  list-style: none;
-  line-height: 25px;
+#about ul {
   text-align: center;
-}
-
-#about #str-and-weak li:nth-child(odd) {
-  background-color: rgba(255, 165, 0, 0.5);
-}
-
-#about #str-and-weak li:nth-child(even) {
-  background-color: rgba(0, 255, 187, 0.5);
-}
-
-#about #str-and-weak li:nth-child(odd):hover {
-  background-color: orange;
-  color: black;
-}
-
-#about #str-and-weak li:nth-child(even):hover {
-  background-color: #00ffbb;
-  color: black;
-}
-
-#about #str-and-weak #strengts,
-#about #str-and-weak #weaknesses {
-  margin: 0 10px;
-  width: 200px;
+  line-height: 20px;
+  list-style: none;
 }
 
 #about #heroes {
@@ -155,21 +145,18 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #about #heroes div {
-  width: 17%;
-  min-width: 200px;
-  text-align: center;
+  width: 33%;
 }
 
 #about #heroes div img {
-  margin-top: 20px;
+  height: 100%;
   width: 100%;
-  border-radius: 50%;
-  border-width: 2px;
 }
 
 .side-note {

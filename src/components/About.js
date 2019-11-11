@@ -82,9 +82,9 @@ export const About = () => {
             </p>
             <br />
             <p>
-              This was offcourse amazing, but when I turned 18, I thought it was
-              time for me to travel by myself and leave my amazing contruction
-              job. <br />I did that for a few years. Most of my time I spend in
+              This off course was amazing, but when I turned 18, I thought it was
+              time for me to travel by myself and leave my amazing construction
+              job. <br />I did that for a few years. Most of my time I spent in
               Australia where I lived for about 3 years. One of the best
               experiences I had there, was working on a{" "}
               <a
@@ -94,13 +94,13 @@ export const About = () => {
               >
                 cattle station
               </a>{" "}
-              in the outback of Australie, I can talk about this for hours!
+              in the outback of Australia, I could talk about this for hours!
             </p>
             <br />
             <p>
               <span className="first-letter">5</span> years ago I moved to
               Berlin when my son was born. <br />
-              Since I did not have any former education, I did what was the easiest
+              Since I did not have any formal education, I did what was the easiest
               thing for me to do. <br />
               Working in call centers for the Dutch market. It was fun at first,
               but after a few years I felt there was nothing new to learn and
@@ -109,21 +109,21 @@ export const About = () => {
             <br />
             <p>
               I really had no idea what I wanted to do. I knew that I wanted to
-              do something that would always keep challenging me and offers a
-              great career path. The last became extra important to me when my
+              do something that would always keep challenging me and would come with a
+              great career path. The latter became extra important to me when my
               son was born. <br />A few months after I quit my last call center
               job, I stumbeld upon a video from a guy who explained how he
-              became a web developer. I was very ispired by his story and
-              started to watch more videos about web developmont, at first. I
-              alway assumed that to be a programmer you would need a very high
-              degree. But watching these people speak, I quickly learned this
+              became a web developer. I was very inspired by his story and
+              started to watch more videos about web developmont. at first, I
+              alway assumed that to be a programmer you would need a high
+              level of education. By watching these people, I quickly learned this
               was not the case and I was inspired to become a developer myself.
             </p>
             <br />
             <p>
-              You can read more about how I skilled myself over the last 2 years,
+              You can read more about how I educated myself over the last 2 years,
               on my <Link to="Experience">experience page.</Link> <br />
-              I just like to add that I am a very positive person, I had over a
+              I'd just like to add that I am a very positive person, I had over a
               decade of fun travelling aound the world and I'm very lucky to
               have a healthy and amazing young child. I think people around me
               often recognise my natural optisim. <br />I can say though, That I
@@ -131,11 +131,11 @@ export const About = () => {
               anything I ever did{" "}
               <span
                 className="side-note"
-                title="Besides from becoming a father offcourse"
+                title="Besides from becoming a father off course"
               >
                 before
               </span>{" "}
-              and it would be so amazing to be given the oppertunity to
+              and it would be so amazing to be given the opportunity to
               work as a developer.
             </p>
           </span>
