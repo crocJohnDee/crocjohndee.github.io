@@ -8,8 +8,6 @@ import { About } from "./components/About";
 import { Skills } from "./components/Skills";
 import { Experience } from "./components/Experience";
 import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
-
 function App() {
   return (
     <>
@@ -21,7 +19,7 @@ function App() {
         <Route path="/experience" component={Experience} />
         <Route path="/contact" component={Contact} />
       </Switch>
-      <Footer />
+
     </>
   );
 }
