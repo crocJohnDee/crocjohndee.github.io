@@ -66,14 +66,6 @@ export const Home = () => {
     intro.forEach(x => x.classList.remove("first-animation"));
   }, 1800);
 
-  const shake = e => {
-    e.persist();
-    e.target.classList.add("shake");
-    e.target.addEventListener("animationend", () =>
-      e.target.classList.remove("shake")
-    );
-  };
-
   return (
     <>
       <section id="home">

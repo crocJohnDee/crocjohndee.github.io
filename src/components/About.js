@@ -29,18 +29,18 @@ export const About = () => {
         <div className="me-container">
           <p>
             <span className="first-letter">H</span> i,
-            I'm Johnny Barendrecht., and thank you so much for checking out my portfolio.
+            I'm Johnny Barendrecht, Thank you so much for checking out my portfolio.
           </p>
 
           <br />
           <p>
-            For the last 2 years I have obtained the necessary skills to start
-            a career as a front-end developer.
+            For the last 2 years I have gained the necessary skills to start
+            a career as a front-end, back-end || full-stack developer.
           </p> <br />
           <p>
-            In Oktober 2017 I decided to change my career from a call-center
+            In October 2017 I decided to change my career from a call-center
             agent to a web-developer. <br />I started doing courses online and
-            after about one year I started a intensive one-year developers
+            after about one year I started an intensive one-year developers
             course at the{" "}
             <a
               target="_blank"
@@ -68,7 +68,7 @@ export const About = () => {
           <br />
           <span className="self">
             <p>
-              I am born and raised in the Netherands <br />
+              I was born and raised in the Netherands <br />
               When I was 16 years old, I worked for a{" "}
               <a
                 target="_blank"
@@ -78,15 +78,15 @@ export const About = () => {
                 greenhouse construction company
               </a>
               . We mainly worked in other countries and from a pretty young age
-              I was travelling all over the world for my work.
+              I was travelling all over the world for work. You could say I was working remote...
             </p>
             <br />
             <p>
-              This was offcourse amazing, but when I turned 18, I thpught it was
-              time for me to travel by myself and leave me amazing contruction
+              This was offcourse amazing, but when I turned 18, I thought it was
+              time for me to travel by myself and leave my amazing contruction
               job. <br />I did that for a few years. Most of my time I spend in
               Australia where I lived for about 3 years. One of the best
-              experiences I had here, was working on a{" "}
+              experiences I had there, was working on a{" "}
               <a
                 target="_blank"
                 rel="noreferrer noopener"
@@ -99,12 +99,12 @@ export const About = () => {
             <br />
             <p>
               <span className="first-letter">5</span> years ago I moved to
-              Berlin where my son was born. <br />
-              Since I did not had any former education, I did what was easiest
+              Berlin when my son was born. <br />
+              Since I did not have any former education, I did what was the easiest
               thing for me to do. <br />
               Working in call centers for the Dutch market. It was fun at first,
               but after a few years I felt there was nothing new to learn and
-              there were no challenges left, and I quit.
+              there were no challenges left, I was very bored and so I quit.
             </p>
             <br />
             <p>
@@ -121,8 +121,8 @@ export const About = () => {
             </p>
             <br />
             <p>
-              You can read more about how I skilled myself in the last 2 years,
-              on my experience <Link to="Experience">page.</Link> <br />
+              You can read more about how I skilled myself over the last 2 years,
+              on my <Link to="Experience">experience page.</Link> <br />
               I just like to add that I am a very positive person, I had over a
               decade of fun travelling aound the world and I'm very lucky to
               have a healthy and amazing young child. I think people around me
@@ -135,7 +135,7 @@ export const About = () => {
               >
                 before
               </span>{" "}
-              and it would just be so amazing to be given the oppertunity to
+              and it would be so amazing to be given the oppertunity to
               work as a developer.
             </p>
           </span>
@@ -153,6 +153,7 @@ export const About = () => {
             <div id="strengts">
               <h3>Strengths</h3>
               <ul>
+                <li>Curious</li>
                 <li>Enthusiasm</li>
                 <li>Creativity</li>
                 <li>Dedication</li>
@@ -181,8 +182,8 @@ export const About = () => {
           <h3>My Heroes</h3>
 
           <p className="center">
-            I believe you can learn a lot about someone if you know who inspires
-            him or her.
+            I believe you can learn a lot about someone if you know who or what inspires
+            them.
         </p>
           <p className="center">
             This list is a fraction of the people that inspire me:

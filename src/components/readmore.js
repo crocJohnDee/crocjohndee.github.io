@@ -2,7 +2,6 @@ export const readMore = (target, butonl, text) => {
   let textField = document.querySelector(`.${target}`);
   let buttonText = document.querySelector(`.${butonl}`);
   const fields = document.querySelectorAll(".exp") || undefined;
-  const buttons = document.querySelectorAll(".butt");
 
   if (textField.style.display === "block") {
     if (text) {

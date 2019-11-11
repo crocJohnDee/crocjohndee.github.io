@@ -38,7 +38,7 @@ export const Contact = () => {
           fontFamily: "'Source Code Pro', monospace",
 
         }}>
-          If I have sparked your curiousity, I would be very happy to heard from you. <br />
+          If I have sparked your curiousity, I would be very happy to hear from you. <br />
           Please fill in the form below or contact me by phone, email or any of the social platforms I have shared. <br />
           <br />
           Hopefully, bis bald! <br /><br />
@@ -48,7 +48,7 @@ export const Contact = () => {
 
         <div className="form-container">
 
-          <form autocomplete="off"
+          <form autoComplete="off"
             id="fs-frm"
             name="simple-contact-form"
             acceptCharset="utf-8"
