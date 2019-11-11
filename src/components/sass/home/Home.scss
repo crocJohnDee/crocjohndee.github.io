@@ -61,9 +61,8 @@
     font-family: 'Raleway', sans-serif;
     color:  rgb(200,200,200) !important;
   }
-  #header-text{
-    
-    animation: slide-header 3s cubic-bezier(0.42, 1.74, 0.62, 0.81), shine 10s linear infinite;
+  #header-text{ 
+    animation: slide-header 3s cubic-bezier(0.42, 1.74, 0.62, 0.81);
   }
   @keyframes slide-header {
     0%,50%{
@@ -115,24 +114,4 @@
       opacity: 1;
     }
   }
-  h1,h2{
-    background: linear-gradient(to right, rgb(200,200,200) 0%, rgb(255,255,255), rgb(200,200,200) 20%, rgb(200,200,200) 100%);
-    background-size: 200% auto;    
-    color:rgb(200,200,200);
-    background-clip: text;  
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;    
-  }
-  h2{
-    animation: shine 10s linear infinite;
-
-  }
-    @keyframes shine {
-      0%,85%{
-        background-position: 50% center;
-      }
-      100% {
-        background-position: -150% center;
-      }
-    }
 }
