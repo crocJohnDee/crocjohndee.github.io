@@ -1,15 +1,125 @@
-#home {
-  width: 100%;
+#home .background {
+  position: absolute;
 }
 
-#home #title {
+#home .opacity {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(26, 9, 63, 0.53);
+}
+
+#home .fadein {
+  height: 100vh;
+  background: url(../../../images/background.jpg) no-repeat 78% 50% fixed;
+  background-size: cover;
+  -webkit-animation: pulse 4s ease-in;
+          animation: pulse 4s ease-in;
+}
+
+@-webkit-keyframes pulse {
+  0%, 50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#home hr {
+  color: #fff4d5;
+  width: 100%;
+  -webkit-animation: grow-hr 2s ease-in-out;
+          animation: grow-hr 2s ease-in-out;
+}
+
+@-webkit-keyframes grow-hr {
+  0%, 30% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes grow-hr {
+  0%, 30% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+#home .bottom-hr {
+  float: right;
+}
+
+#home .title {
   width: 90%;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 50px;
-  margin-top: 24vh;
+  -webkit-transform: translateY(35vh);
+          transform: translateY(35vh);
   font-family: 'Raleway', sans-serif;
   color: #fff4d5;
+}
+
+#home #header-text {
+  -webkit-animation: slide-header 3s cubic-bezier(0.42, 1.74, 0.62, 0.81);
+          animation: slide-header 3s cubic-bezier(0.42, 1.74, 0.62, 0.81);
+}
+
+@-webkit-keyframes slide-header {
+  0%, 50% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  85% {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes slide-header {
+  0%, 50% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  85% {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+#home #proffesion {
+  margin: 30px;
 }
 
 #home #buttons {
@@ -24,10 +134,6 @@
   margin: 0 auto;
 }
 
-#home #buttons button {
-  background: transparent;
-}
-
 #home #buttons .btn {
   padding: 8px 0;
   width: 8em;
@@ -36,12 +142,51 @@
   margin: 5px;
   color: #fff4d5;
   border-radius: 5px;
-  border: 1px solid #fff4d5;
+  border: 1px solid white;
 }
 
 #home #buttons .button:active {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   background: red;
+}
+
+#home #finally {
+  -webkit-animation: finally 5s ease-in-out;
+          animation: finally 5s ease-in-out;
+}
+
+@-webkit-keyframes finally {
+  0%, 80% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  95% {
+    -webkit-transform: scale(1.09);
+            transform: scale(1.09);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes finally {
+  0%, 80% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  95% {
+    -webkit-transform: scale(1.09);
+            transform: scale(1.09);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=Home.css.map */

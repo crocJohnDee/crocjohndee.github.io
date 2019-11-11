@@ -9,7 +9,7 @@
 html {
   width: 100%;
   scroll-behavior: smooth;
-  background-color: #2e3842;
+  background-color: #34427f;
   min-height: 100vh;
 }
 
@@ -19,5 +19,9 @@ html {
   padding: 7px;
   width: 90%;
   margin: 10px auto;
+}
+
+a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=app.css.map */

@@ -25,6 +25,7 @@
     }
   }
   hr{
+    color: #fff4d5;
     width: 100%;
     animation: grow-hr 2s ease-in-out;
   }
@@ -74,10 +75,6 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
-
-    button{
-      background: transparent;
-    }
     .btn {
       padding: 8px 0;
       width: 8em;
@@ -86,7 +83,7 @@
       margin: 5px;
       color: #fff4d5;
       border-radius: 5px;
-      border: 1px solid #fff4d5;
+      border: 1px solid white;
     }
     .button:active{
       transform: scale(1.2);

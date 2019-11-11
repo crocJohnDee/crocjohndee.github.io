@@ -13,7 +13,7 @@ nav {
   z-index: 999;
 }
 
-.bb {
+nav .bb {
   font-family: 'Roboto', sans-serif;
   color: #fff4d5;
 }
