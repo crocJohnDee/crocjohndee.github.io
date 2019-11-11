@@ -11,13 +11,13 @@ export const Home = () => {
           </div>
         </div>
         <div className="title">
-          <hr className="top-hr" />
+          <div className="hr" />
           <br />
           <h1 id="header-text">
             <span id="x">JOHNNY BARENDRECHT</span>
           </h1>
           <br />
-          <hr className="bottom-hr" />
+          <div className="hr bottom-hr" />
           <div id="finally">
             <h2 id="proffesion">
               Web Developer
