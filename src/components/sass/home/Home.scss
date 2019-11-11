@@ -31,9 +31,10 @@
     }
   }
   .hr{ 
+    z-index: 10;
     height: 2px;
     width: 100%;
-    background-color: lightgray;
+    background-color: rgb(200,200,200);
     animation: grow-hr 2s ease-in-out;
   }
   @keyframes grow-hr {
@@ -44,6 +45,7 @@
     100% {
       width: 100%;
       transform: rotate(180deg);
+      opacity: 1;
     }
   }
   .bottom-hr {
