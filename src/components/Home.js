@@ -28,7 +28,7 @@ export const Home = () => {
 
               <Link to="about">
                 <div className="btn">
-                  <p>Experience</p>
+                  <p>Portfolio</p>
                 </div>
               </Link>
 
