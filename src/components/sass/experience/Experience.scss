@@ -5,39 +5,20 @@
   padding-top: 70px;
   padding-bottom: 100px;
   color: rgb(200,200,200);
-  background-color: #000416;
   text-align: center;
   overflow: hidden;
-  animation: bg 1.2s ease-in-out;
-  
-  #header-line{
-    height: 2px;
-    background-color: rgb(200,200,200);
-    width: 50%;
-    margin: 10px auto;
-    animation: header-line .8s ease-in-out; 
-  }
-  @keyframes header-line {
-    0%{
-      width: 0%;
-    }
-    90%{
-      width: 55%;
-    }
-    100%{
-      width: 50%;
-    }
-  }
+
   #work-gallery{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 
   }
   
   .work{
-    width: (100vw /3);
-    height: (100vw /3);
+    width: (100% / 3);
+    height: (100% / 3);
     display: none;
     img{
       width: 100%;

@@ -13,29 +13,21 @@ export const Experience = () => {
   setTimeout(() => {
     const gallery = document.querySelectorAll(".work");
     const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
-    console.log(gallery);
-
-    setTimeout(() => {
-      sleep(200).then(() => gallery[0].classList.add("show"));
-      sleep(300).then(() => gallery[1].classList.add("show"));
-      sleep(400).then(() => gallery[2].classList.add("show"));
-      sleep(500).then(() => gallery[3].classList.add("show"));
-      sleep(600).then(() => gallery[4].classList.add("show"));
-      sleep(700).then(() => gallery[5].classList.add("show"));
-      sleep(800).then(() => gallery[6].classList.add("show"));
-      sleep(900).then(() => gallery[7].classList.add("show"));
-      sleep(1000).then(() => gallery[8].classList.add("show"));
-    }, 1000);
+    let ms = 1000
+    for (let i = 0; i < gallery.length; i++) {
+      sleep(ms).then(() => gallery[i].classList.add("show"));
+      ms += 100;
+    }
   });
 
 
   return (
     <>
       <section id="experience">
-
+        <div class="test"></div>
         <br />
         <h2 className="header">Portfolio</h2>
-        <div id="header-line"></div>
+        <div className="header-line"></div>
 
         <br />
 
