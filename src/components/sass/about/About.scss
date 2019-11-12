@@ -7,6 +7,7 @@
   background-color: rgb(22, 29, 61);
 
   h2 {
+    color: orange;
     opacity: .7;
     text-align: center;
     position: relative;
@@ -19,10 +20,9 @@
     90%{
       transform: scale(1.1) rotateX(440deg);
       opacity: 1;
-      color: white
      }
      
-      100%{transform: scale(1) rotateX(360deg); color: white}
+      100%{transform: scale(1) rotateX(360deg)}
   }
 
   .me-container {
@@ -86,14 +86,16 @@
       }
     }
   }
-  a,
-  a:visited {
-    color: orange;
+  animation: bg 1.2s ease-in-out;
+}
+
+@keyframes bg{
+  0%,50%{
+    background-color: rgba(22, 29, 61,0);
   }
-  a:hover {
-    color: orangered;
+  100%{
+    background-color: rgba(22, 29, 61, 1);
   }
-  
 }
   
   

@@ -31,17 +31,17 @@ export const About = () => {
             <div id="p2">
 
               <p>
-                In October 2017 I decided to change my career from a call-center
-            agent to a web-developer. <br />I started doing courses online and
-                                          after about one year I started an intensive one-year developers
-            course at the{" "}
-                <a
+                In October 2017 I decided to change my career from a call-center agent to a web-developer. <br />I started doing courses online andnafter about one year I started an intensive one-year developers course at the{" "}
+
+
+                <a style={{ color: "orange" }}
                   target="_blank"
                   rel="noreferrer noopener"
                   href="https://digitalcareerinstitute.org/"
                 >
                   Digital Career Institute (DCI)
             </a>
+
                 . <br />
               </p>
               <br />
@@ -49,14 +49,8 @@ export const About = () => {
                 Not only am I a student, I am also the class Tutor. Every monday and
                 friday I assist my peers with projects we currently work on in
             class. <br />
-                This is a paid position by{" "}
-                <a
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  href="https://digitalcareerinstitute.org/"
-                >
-                  DCI
-            </a>{" "}
+                This is a paid position by DCI
+
               </p>
 
             </div>

@@ -103,17 +103,15 @@
     animation: finally 5s ease-in-out;
   }
   @keyframes finally {
-    0%,80%{
+    0%,50%{
       opacity: 0;
       transform: scale(.5);
     }
     95%{
-      color: rgb(200,200,200);
+
       transform: scale(1.09);
     }
-    98%{
-      color:rgb(120,120,120);
-    }
+ 
     100%{
       transform: scale(1);
       opacity: 1;
