@@ -4,7 +4,7 @@
   min-height: 100vh;
   padding-top: 70px;
   color: rgb(200,200,200);
-  background-color: rgb(22, 29, 61);
+  background-color: #000416;
 
   h2 {
     color: orange;
@@ -35,9 +35,12 @@
       float: left;
       width: 50%; 
       height: 100%; 
-      border: 2px solid rgb(100,100,100);
+      border-top: 1px solid white;
+      border-left: 1px solid white;
+      border-bottom: 1px solid white;
       border-radius: 50%;
-      margin-top: 25px;
+      margin-bottom: 10px;
+      margin-top: 10px;
       animation: show-img 2s ease-in-out;
     }
     @keyframes show-img {
@@ -54,6 +57,7 @@
       }
     }
     #p1{
+     
       animation: p1 2.5s ease-in-out;
     }
     @keyframes p1 {
@@ -94,7 +98,7 @@
     background-color: rgba(22, 29, 61,0);
   }
   100%{
-    background-color: rgba(22, 29, 61, 1);
+    background-color: #000416;
   }
 }
   

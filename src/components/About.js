@@ -1,10 +1,11 @@
 import React from "react";
 import "./sass/about/About.scss";
-import me from "../images/me2.jpg";
+import me from "../images/me.png";
 import { Footer } from "./Footer";
 
 export const About = () => {
-  window.scrollTo(0, 0);
+  setTimeout(()=>window.scrollTo(0, 0));
+  
   return (
     <>
       <section id="about">
@@ -21,7 +22,10 @@ export const About = () => {
               Hi,
               I'm Johnny Barendrecht, Thank you so much for checking out my portfolio.
 
-            <br /><br />
+          </p>
+            <br />
+            <div id="p2">
+<p>
 
               For the last 2 years I have gained the necessary skills to start
               a career as a front-end, back-end || full-stack developer.
@@ -41,11 +45,10 @@ export const About = () => {
               a career as a front-end, back-end || full-stack developer.     For the last 2 years I have gained the necessary skills to start
               a career as a front-end, back-end || full-stack developer.     For the last 2 years I have gained the necessary skills to start
               a career as a front-end, back-end || full-stack developer.
-          </p>
 
+</p>
             <br />
 
-            <div id="p2">
 
               <p>
                 In October 2017 I decided to change my career from a call-center agent to a web-developer. <br />I started doing courses online andnafter about one year I started an intensive one-year developers course at the{" "}
