@@ -25,7 +25,7 @@ export const Nav = () => {
 
         <p>
           <Link to="skills">
-            <span className="bb">Skills</span>
+            <span className="bb">Resume</span>
           </Link>
         </p>
       </nav>

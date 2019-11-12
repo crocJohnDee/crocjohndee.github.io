@@ -1,149 +1,65 @@
 #experience {
+  position: relative;
   width: 100%;
   min-height: 100vh;
-  color: white;
-  padding-bottom: 5vh;
-  background: #222222cc;
-  p {
-    text-align: center;
-  }
-  #experience-header{
-    background: url(../../../images/experience-header.jpeg) no-repeat center 100% ; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: 100%,100%;
-    position: relative;
-    width: 100%;
-    border-bottom: 1px solid #00ffbb;
-    padding: 10vw 0;
-  }
-  #header-buttons {
-    position: sticky;
-    top: 0;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-around;
-    button{
-      background: rgba(0, 0, 0, 0.48);
-      width: 100%;
-      padding: 5px 0;
-      color: white;
-    }
-    .center-button{
-      border-left: 1px solid #00ffbb;
-      border-right: 1px solid #00ffbb;
-    }
-
-  }
-  .cert {
-    color: #00ffbb;
-  }
-  a,
-  a:visited {
-    color: orange;
-  }
-  a:hover {
-    color: orangered;
-  }
+  padding-top: 70px;
+  padding-bottom: 100px;
+  color: rgb(200,200,200);
+  background-color: #000416;
+  text-align: center;
+  overflow: hidden;
+  animation: bg 1.2s ease-in-out;
   
-  
-  #online,
-  #dci,
-  #tutor {
-    width: 95%;
-      margin: 0 auto;
-      padding: 10px;
-      background-color: rgba(0, 0, 0, 0.48);
-    p {
-      text-align: center;
-      margin: 10px auto;
-    }
-
-    ul {
-      width: 300px;
-      margin: 5px auto 10px auto;
-      list-style: none;
-      line-height: 25px;
-    }
-
-    .header-image {
-      display: block;
-      width: 70%;
-      max-width: 300px;
-      transition: 0.4s;
-      margin: 20px auto;
-    }
-
-    .header-image:hover {
-      transform: scale(1.1);
-    }
-
-    .book {
-      width: 40%;
-      margin: 5%;
-      border: 1px solid orange;
-    }
+  #header-line{
+    height: 2px;
+    background-color: rgb(200,200,200);
+    width: 50%;
+    margin: 10px auto;
+    animation: header-line .8s ease-in-out; 
   }
-  .online,
-  .dci,
-  .tutor {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-    display: none;
-    // overflow: hidden;
-    animation: unfold 0.4s cubic-bezier(0.59, 1.51, 0.72, 0.8);
-    transform-origin: top center;
-  }
-  @keyframes unfold {
-    0% {
-      transform: scale(0) translate(60vw, 90vh);
-    }
-
-    100% {
-      transform: scale(1) rotate(360deg) translate(0);
-    }
-  }
-  .fold {
-    text-align: right;
-    animation: fold 0.4s ease-in-out;
-  }
-  @keyframes fold {
-    0% {
-      transform: scale(0.4);
-    }
-
-    100% {
-      transform: scale(0) rotate(900deg) translate(60vw, 60vh);
-    }
-  }
-
-
-  #gitpen {
-    text-align: center;
-    margin: 5vw;
-    a {
-      font-size: 50px;
-      margin: 5vw;
-    }
-  }
-
-  .select {
-    animation: fadein .2s ease-in;
-    color: #00ffbb  !important;
-    border-bottom: orange 1px solid;
-  }
-  @keyframes fadein {
+  @keyframes header-line {
     0%{
-      border-bottom: solid 1px transparent;
-      color: transparent  !important;
-      
+      width: 0%;
+    }
+    90%{
+      width: 55%;
     }
     100%{
-      border-bottom: solid 1px orange;
-      color: #00ffbb  !important;
-
+      width: 50%;
     }
   }
+  #work-gallery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  
+  .work{
+    width: (100vw /3);
+    height: (100vw /3);
+    display: none;
+    img{
+      width: 100%;
+    }
+  }
+  .show{
+    display: block !important;
+    animation: show .8s ease-in-out;
+  }
+  @keyframes show {
+    0%{
+      opacity: 0;
+      transform: scale(0);
+    }
+    70%{
+      transform: scale(1.2);
+    }
+    100%{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+
 }

@@ -3,27 +3,9 @@
   width: 100%;
   min-height: 100vh;
   padding-top: 70px;
+  padding-bottom: 100px;
   color: rgb(200,200,200);
   background-color: #000416;
-
-  h2 {
-    color: orange;
-    opacity: .7;
-    text-align: center;
-    position: relative;
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-    animation: show-h 1.5s ease-in-out;
-  } 
-  @keyframes show-h {
-    0%,30%{transform: scale(0) rotateX(180deg)}
-    90%{
-      transform: scale(1.1) rotateX(440deg);
-      opacity: 1;
-     }
-     
-      100%{transform: scale(1) rotateX(360deg)}
-  }
 
   .me-container {
     overflow: hidden;
@@ -94,14 +76,7 @@
   animation: bg 1.2s ease-in-out;
 }
 
-@keyframes bg{
-  0%,50%{
-    background-color: rgba(22, 29, 61,0);
-  }
-  100%{
-    background-color: #000416;
-  }
-}
+
   
   
   
