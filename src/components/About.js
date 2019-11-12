@@ -4,6 +4,7 @@ import me from "../images/me2.jpg";
 import { Footer } from "./Footer";
 
 export const About = () => {
+  window.scrollTo(0, 0);
   return (
     <>
       <section id="about">
@@ -24,6 +25,22 @@ export const About = () => {
 
               For the last 2 years I have gained the necessary skills to start
               a career as a front-end, back-end || full-stack developer.
+
+
+
+              For the last 2 years I have gained the necessary skills to start
+              a career as a front-end, back-end || full-stack developer.     For the last 2 years I have gained the necessary skills to start
+              a career as a front-end, back-end || full-stack developer.     For the last 2 years I have gained the necessary skills to start
+
+              <br/> <br/>
+              a career as a front-end, back-end || full-stack developer.     For the last 2 years I have gained the necessary skills to start
+              a career as a front-end, back-end || full-stack developer.     For the last 2 years I have gained the necessary skills to start
+              a career as a front-end, back-end || full-stack developer.     For the last 2 years I have gained the necessary skills to start
+              a career as a front-end, back-end || full-stack developer. <br/><br/>    For the last 2 years I have gained the necessary skills to start
+              a career as a front-end, back-end || full-stack developer.     For the last 2 years I have gained the necessary skills to start
+              a career as a front-end, back-end || full-stack developer.     For the last 2 years I have gained the necessary skills to start
+              a career as a front-end, back-end || full-stack developer.     For the last 2 years I have gained the necessary skills to start
+              a career as a front-end, back-end || full-stack developer.
           </p>
 
             <br />
@@ -33,31 +50,33 @@ export const About = () => {
               <p>
                 In October 2017 I decided to change my career from a call-center agent to a web-developer. <br />I started doing courses online andnafter about one year I started an intensive one-year developers course at the{" "}
 
+           
 
-                <a style={{ color: "orange" }}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  href="https://digitalcareerinstitute.org/"
-                >
-                  Digital Career Institute (DCI)
+
+                          <a style={{ color: "orange" }}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            href="https://digitalcareerinstitute.org/"
+                          >
+                            Digital Career Institute (DCI)
             </a>
 
-                . <br />
-              </p>
-              <br />
-              <p>
-                Not only am I a student, I am also the class Tutor. Every monday and
-                friday I assist my peers with projects we currently work on in
+                          . <br />
+                        </p>
+                        <br />
+                        <p>
+                          Not only am I a student, I am also the class Tutor. Every monday and
+                          friday I assist my peers with projects we currently work on in
             class. <br />
-                This is a paid position by DCI
-
+                          This is a paid position by DCI
+          
               </p>
 
             </div>
           </div>
         </div>
-        <Footer />
+                  <Footer />
       </section>
     </>
-  );
-};
+              );
+            };
