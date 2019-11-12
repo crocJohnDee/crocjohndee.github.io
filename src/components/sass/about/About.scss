@@ -1,24 +1,10 @@
 #about {
+  position: relative;
   width: 100%;
   min-height: 100vh;
+  padding-top: 80px;
   color: rgb(200,200,200);
-  padding-bottom: 5vh;
-
-  .opacity {
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(46, 59, 69,.8);
-    z-index: 0;
-
-  }
-
-  #about-header{
-    background: url(../../../images/about-header.jpg) no-repeat 50% 50%;
-    background-size: cover; 
-     padding: 79px 0 50px 0;
-  }
+  background-color: rgb(22, 29, 61);
 
   h2 {
     opacity: .7;
@@ -51,6 +37,7 @@
       height: 100%; 
       border: 2px solid rgb(100,100,100);
       border-radius: 50%;
+      margin-top: 25px;
       animation: show-img 2s ease-in-out;
     }
     @keyframes show-img {
@@ -99,25 +86,6 @@
       }
     }
   }
-    
-    .read-button2 {
-    background: none;
-    color: orange;
-    cursor: pointer;
-    outline: none;
-    display: block;
-    margin: 2vw auto;
-    padding: 10px;
-    border: 1px solid;
-    transition: 0.4s;
-    border-radius: 5px;
-  }
-  .read-button2:hover {
-    color: rgb(40, 40, 40);
-    background-color: orange;
-    transform: scale(1.1);
-    // font-weight: bold;
-  }
   a,
   a:visited {
     color: orange;
@@ -125,21 +93,7 @@
   a:hover {
     color: orangered;
   }
-  .self {
-    display: none;
-    animation: slide-down 0.2s ease-in-out;
-  }
-  @keyframes slide-down {
-    0% {
-      width: 25%;
-    }
-    100% {
-      width: 100%;
-    }
-  }
-  .side-note{
-    color: red;
-  }
+  
 }
   
   
