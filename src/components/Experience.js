@@ -24,7 +24,6 @@ export const Experience = () => {
   return (
     <>
       <section id="experience">
-        <div class="test"></div>
         <br />
         <h2 className="header">Portfolio</h2>
         <div className="header-line"></div>

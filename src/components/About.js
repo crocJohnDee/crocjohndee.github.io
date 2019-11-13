@@ -9,7 +9,6 @@ export const About = () => {
   return (
     <>
       <section id="about">
-        <div className="test"></div>
         <div className="me-container">
 
           <img src={me} alt="me" />
