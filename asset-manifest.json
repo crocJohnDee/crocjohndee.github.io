@@ -1,23 +1,28 @@
 {
   "files": {
     "main.css": "/static/css/main.79f68a67.chunk.css",
-    "main.js": "/static/js/main.3d4d32a1.chunk.js",
-    "main.js.map": "/static/js/main.3d4d32a1.chunk.js.map",
+    "main.js": "/static/js/main.c11c0202.chunk.js",
+    "main.js.map": "/static/js/main.c11c0202.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.7302273d.js",
     "runtime~main.js.map": "/static/js/runtime~main.7302273d.js.map",
     "static/css/2.0405e156.chunk.css": "/static/css/2.0405e156.chunk.css",
-    "static/js/2.b20af7a2.chunk.js": "/static/js/2.b20af7a2.chunk.js",
-    "static/js/2.b20af7a2.chunk.js.map": "/static/js/2.b20af7a2.chunk.js.map",
+    "static/js/2.b91948e9.chunk.js": "/static/js/2.b91948e9.chunk.js",
+    "static/js/2.b91948e9.chunk.js.map": "/static/js/2.b91948e9.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.13b82cf6e8c12d898ff20d80c0a82745.js": "/precache-manifest.13b82cf6e8c12d898ff20d80c0a82745.js",
+    "precache-manifest.9d2e576ea3c25dbcb1073bff34374599.js": "/precache-manifest.9d2e576ea3c25dbcb1073bff34374599.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.0405e156.chunk.css.map": "/static/css/2.0405e156.chunk.css.map",
     "static/css/main.79f68a67.chunk.css.map": "/static/css/main.79f68a67.chunk.css.map",
     "static/media/Johnny Barendrecht.pdf": "/static/media/Johnny Barendrecht.7bc86dd4.pdf",
     "static/media/Johnny Barendrecht.png": "/static/media/Johnny Barendrecht.9fd2ddbe.png",
+    "static/media/armin.jpg": "/static/media/armin.1d60d41c.jpg",
     "static/media/available.png": "/static/media/available.3abdc695.png",
     "static/media/Home.scss": "/static/media/background.a697f843.jpg",
+    "static/media/bill-gates.jpg": "/static/media/bill-gates.bbdf696b.jpg",
+    "static/media/brian.jpg": "/static/media/brian.3d771f15.jpg",
+    "static/media/elon.jpg": "/static/media/elon.8175858c.jpg",
     "static/media/all.css": "/static/media/fa-solid-900.db525089.woff",
-    "static/media/me.png": "/static/media/me.01801682.png"
+    "static/media/me.png": "/static/media/me.01801682.png",
+    "static/media/neil.jpg": "/static/media/neil.952683c1.jpg"
   }
 }

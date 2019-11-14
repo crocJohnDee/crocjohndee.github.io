@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8abb65d2ce4a1fe6b26109ca6467ad0f",
+    "revision": "18c6e1e2cbb2fb03d1cbad2bfda74afe",
     "url": "/index.html"
   },
   {
-    "revision": "78d72c920e6b68c8d776",
+    "revision": "6c79df87926f29df70a6",
     "url": "/static/css/2.0405e156.chunk.css"
   },
   {
-    "revision": "94ab3237a3ada32d42f4",
+    "revision": "490539a3ea670d4f2fe7",
     "url": "/static/css/main.79f68a67.chunk.css"
   },
   {
-    "revision": "78d72c920e6b68c8d776",
-    "url": "/static/js/2.b20af7a2.chunk.js"
+    "revision": "6c79df87926f29df70a6",
+    "url": "/static/js/2.b91948e9.chunk.js"
   },
   {
-    "revision": "94ab3237a3ada32d42f4",
-    "url": "/static/js/main.3d4d32a1.chunk.js"
+    "revision": "490539a3ea670d4f2fe7",
+    "url": "/static/js/main.c11c0202.chunk.js"
   },
   {
     "revision": "416cc1c79b8c22940a8c",
@@ -32,12 +32,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Johnny Barendrecht.9fd2ddbe.png"
   },
   {
+    "revision": "1d60d41c663a15bdea56ee913355bb60",
+    "url": "/static/media/armin.1d60d41c.jpg"
+  },
+  {
     "revision": "3abdc6958ca62646e0ff183dca2c6257",
     "url": "/static/media/available.3abdc695.png"
   },
   {
     "revision": "a697f84323a9e9cbf748be6c86fb7244",
     "url": "/static/media/background.a697f843.jpg"
+  },
+  {
+    "revision": "bbdf696be82b730aa7617e20d310e01f",
+    "url": "/static/media/bill-gates.bbdf696b.jpg"
+  },
+  {
+    "revision": "3d771f15e7f21c77d76e4d7cb1a9dd8e",
+    "url": "/static/media/brian.3d771f15.jpg"
+  },
+  {
+    "revision": "8175858cc86edb4d3f5524635e1ada32",
+    "url": "/static/media/elon.8175858c.jpg"
   },
   {
     "revision": "0425d661f34ffa46604c9dfa344c03bb",
@@ -102,5 +118,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "018016828f2afc89a750706ed999fa0a",
     "url": "/static/media/me.01801682.png"
+  },
+  {
+    "revision": "952683c17f00d38f0f0eef2e87bfdb72",
+    "url": "/static/media/neil.952683c1.jpg"
   }
 ]);
