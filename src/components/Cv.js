@@ -15,7 +15,6 @@ export const Cv = () => {
         <h2 className="header">Resume</h2>
         <div className="header-line"></div>
         <div id="download">
-          {" "}
           <a href={pdf} download>
             Download
           </a>

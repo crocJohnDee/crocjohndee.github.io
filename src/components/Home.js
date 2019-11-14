@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Footer } from "./Footer";
 import { Nav } from "./Nav";
-import available from "../images/available.jpg";
+import available from "../images/available.png";
 import "./sass/home/Home.scss";
 export const Home = () => {
   return (

@@ -4,7 +4,7 @@
     height: 100vh;
     min-height: 450px;
     align-items: center;
-    position: absolute;
+    position: relative;
     #nav {
         background-color: transparent !important;
     }
@@ -142,8 +142,9 @@
         opacity: 0;
         transform: scale(0);
         position: absolute;
-        top: 50px;
-        width: 100vw;
+        top: 50%;
+        margin-top: -50%;
+        width: 100%;
         animation: glow 2s ease-in-out;
     }
     @keyframes glow {
@@ -152,8 +153,8 @@
             transform: scale(0.3);
         }
         50% {
-            opacity: 0.4;
-            transform: scale(0.8);
+            opacity: 0.2;
+            transform: scale(0.6);
         }
         80%,
         100% {
