@@ -1,0 +1,58 @@
+#skills {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    color: rgb(200, 200, 200);
+    overflow: hidden;
+    img {
+        display: block;
+        margin: 20px auto;
+        width: 100%;
+        max-width: 600px;
+        animation: img 3s ease-in-out;
+    }
+    @keyframes img {
+        0%,
+        70% {
+            opacity: 0;
+            transform: scale(0, 0.5);
+        }
+        95% {
+            transform: scale(1, 1);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+    }
+    #download {
+        position: fixed;
+        padding: 5px;
+        font-weight: bold;
+        font-family: "Raleway", sans-serif;
+        margin: 10px 0;
+        margin-left: 70%;
+        cursor: pointer;
+        top: 60px;
+        right: 7px;
+        background-color: #280095;
+        opacity: 0.7;
+        border-radius: 10px;
+        animation: download 4s cubic-bezier(0.72, 1.76, 0.53, 0.73);
+        a {
+            color: white;
+            text-decoration: none !important;
+        }
+    }
+    @keyframes download {
+        0%,
+        85% {
+            transform: translateX(30vw);
+        }
+        100% {
+            transform: translateXY(0px);
+        }
+    }
+}

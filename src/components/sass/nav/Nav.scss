@@ -1,20 +1,22 @@
 nav {
-  position: fixed;
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  top: 0px;
-  width: 100%;
-  z-index: 999;
-  height: 50px;
-  border-bottom: 1px solid rgba(200,200,200,.4);
-  line-height: 50px;
-  .bb{
-    font-family: 'Roboto', sans-serif;
-    color: rgb(230,230,230);
-  }
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    height: 50px;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.4);
+    line-height: 50px;
+    background-color: #000416;
+    .bb {
+        font-family: "Roboto", sans-serif;
+        color: rgb(230, 230, 230);
+        margin: 0 10px;
+    }
 }
-  
+
 // @media screen and (min-height: 600px) {
 //   nav {
 //     overflow-y: hidden;

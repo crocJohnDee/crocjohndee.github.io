@@ -1,16 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Footer } from "./Footer";
+import { Nav } from "./Nav";
 import available from "../images/available.jpg";
 import "./sass/home/Home.scss";
 export const Home = () => {
   return (
     <>
       <section id="home">
+        <Nav />
         <div className="background fadein">
           <div className="opacity"></div>
         </div>
         <img id="available" src={`${available}`} alt="" />
+
         <div className="title">
           <div className="hr" />
           <br />
@@ -23,15 +26,15 @@ export const Home = () => {
             <h2 id="proffesion">Web Developer</h2>
 
             <div id="buttons">
-              <Link to="about">
+              <Link to="portfolio">
                 <div className="btn">
                   <p>Portfolio</p>
                 </div>
               </Link>
 
-              <Link to="experience">
-                <div title="Please" className="btn">
-                  <p>Resume</p>
+              <Link to="cv">
+                <div className="btn">
+                  <p>CV</p>
                 </div>
               </Link>
             </div>

@@ -18,14 +18,14 @@ export const Nav = () => {
         </p>
 
         <p>
-          <Link to="experience">
+          <Link to="portfolio">
             <span className="bb">Portfolio</span>
           </Link>
         </p>
 
         <p>
-          <Link to="skills">
-            <span className="bb">Resume</span>
+          <Link to="cv">
+            <span className="bb">CV</span>
           </Link>
         </p>
       </nav>
