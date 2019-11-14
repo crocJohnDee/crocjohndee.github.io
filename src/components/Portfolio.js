@@ -3,6 +3,13 @@ import "./sass/portfolio/Portfolio.scss";
 import { Footer } from "./Footer";
 import { Nav } from "./Nav";
 
+import armin from "../images/armin.jpg";
+import bill from "../images/bill-gates.jpg";
+import brian from "../images/brian.jpg";
+import dundee from "../images/dundee.jpeg";
+import neil from "../images/neil.jpg";
+import elon from "../images/elon.jpg";
+
 export const Portfolio = () => {
   setTimeout(() => {
     const gallery = document.querySelectorAll(".work");
@@ -23,6 +30,44 @@ export const Portfolio = () => {
         <div className="header-line"></div>
 
         <br />
+
+        <div id="work-gallery">
+          <div className="work">
+            <img src={armin} alt="" />
+          </div>
+
+          <div className="work">
+            <img src={neil} alt="" />
+          </div>
+
+          <div className="work">
+            <img src={dundee} alt="" />
+          </div>
+
+          <div className="work">
+            <img src={bill} alt="" />
+          </div>
+
+          <div className="work">
+            <img src={brian} alt="" />
+          </div>
+
+          <div className="work">
+            <img src={elon} alt="" />
+          </div>
+
+          <div className="work">
+            <img src={neil} alt="" />
+          </div>
+
+          <div className="work">
+            <img src={armin} alt="" />
+          </div>
+
+          <div className="work">
+            <img src={bill} alt="" />
+          </div>
+        </div>
 
         <Footer />
       </section>
